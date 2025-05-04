@@ -1,1329 +1,1536 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aaron Enten | Innovation Management & Technology Commercialization</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        .gradient-bg {
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-        }
-        .skill-pill {
-            transition: all 0.3s ease;
-        }
-        .skill-pill:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        .timeline-item:not(:last-child)::after {
-            content: '';
-            position: absolute;
-            left: 24px;
-            top: 32px;
-            height: calc(100% - 32px);
-            width: 2px;
-            background: #e5e7eb;
-        }
-        .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aaron Enten | Innovation Management & Technology Commercialization</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .gradient-bg {
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    }
+
+    .skill-pill {
+      transition: all 0.3s ease;
+    }
+
+    .skill-pill:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .timeline-item:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      left: 24px;
+      top: 32px;
+      height: calc(100% - 32px);
+      width: 2px;
+      background: #e5e7eb;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+  </style>
 </head>
+
 <body class="font-sans antialiased text-gray-800">
-    <!-- Header/Navigation -->
-    <header id="pageHeader" class="sticky top-0 z-50 bg-white shadow-sm transition-transform duration-300">
-        <div class="container mx-auto px-6 py-4">
-            <div class="flex items-center justify-between">
-                <div class="text-2xl font-bold text-indigo-700">Aaron Enten</div>
-                <nav class="hidden md:flex space-x-8">
-                    <a href="#about" class="text-gray-700 hover:text-indigo-600 transition">About</a>
-                    <a href="#skills" class="text-gray-700 hover:text-indigo-600 transition">Skills</a>
-                    <a href="#projects" class="text-gray-700 hover:text-indigo-600 transition">Projects</a>
-                    <a href="#experience" class="text-gray-700 hover:text-indigo-600 transition">Experience</a>
-                    <a href="#education" class="text-gray-700 hover:text-indigo-600 transition">Education</a>
-                    <a href="#awards" class="text-gray-700 hover:text-indigo-600 transition">Awards</a>
-                    <a href="#contact" class="text-gray-700 hover:text-indigo-600 transition">Contact</a>
-                </nav>
-                <button class="md:hidden focus:outline-none">
-                    <i class="fas fa-bars text-2xl text-gray-700"></i>
-                </button>
-            </div>
-        </div>
-    </header>
+  <!-- Header/Navigation -->
+  <header id="pageHeader" class="sticky top-0 z-50 bg-white shadow-sm transition-transform duration-300">
+    <div class="container mx-auto px-6 py-4">
+      <div class="flex items-center justify-between">
+        <div class="text-2xl font-bold text-indigo-700">Aaron Enten</div>
+        <nav class="hidden md:flex space-x-8">
+          <a href="#about" class="text-gray-700 hover:text-indigo-600 transition">About</a>
+          <a href="#skills" class="text-gray-700 hover:text-indigo-600 transition">Skills</a>
+          <a href="#projects" class="text-gray-700 hover:text-indigo-600 transition">Projects</a>
+          <a href="#experience" class="text-gray-700 hover:text-indigo-600 transition">Experience</a>
+          <a href="#education" class="text-gray-700 hover:text-indigo-600 transition">Education</a>
+          <a href="#awards" class="text-gray-700 hover:text-indigo-600 transition">Awards</a>
+          <a href="#contact" class="text-gray-700 hover:text-indigo-600 transition">Contact</a>
+        </nav>
+        <button class="md:hidden focus:outline-none">
+          <i class="fas fa-bars text-2xl text-gray-700"></i>
+        </button>
+      </div>
+    </div>
+  </header>
 
-    <!-- About Section -->
-    <section class="gradient-bg py-20 relative">
-      <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
-        <!-- Left Column: Text and Buttons -->
-        <div class="md:w-1/2 mb-10 md:mb-0">
-          <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Aaron Enten</h1>
-          <h2 class="text-2xl md:text-3xl text-indigo-600 mb-6">BioEngineering Innovation Management & <br> Technology Commercialization</h2>
-          <p class="text-lg text-gray-600 mb-8">Experience building and scaling medical technology products with a focus on user experience and business impact.</p>
-          <div class="flex items-end space-x-4">
-            <!-- Buttons Group -->
-            <div class="flex space-x-4">
-              <a href="#contact" class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg transition">Get In Touch</a>
-              <a href="#experience" class="border border-indigo-600 text-indigo-600 hover:bg-indigo-50 px-6 py-3 rounded-lg transition">View Experience</a>
-              <a href="/src/Resume-ACE_2025_v2.pdf" download class="bg-indigo-200 text-indigo-600 hover:bg-indigo-50 px-6 py-3 rounded-lg transition">
-                Download Resume
-              </a>
-            </div>
-          
-            <!-- Icons Group, bottom-aligned with buttons -->
-            <div class="flex space-x-4 ml-4 self-end">
-              <a href="https://www.linkedin.com/in/aaronenten" class="text-blue-500 hover:text-white transition text-xl">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-              <a href="https://orcid.org/0009-0004-1401-2501" class="text-green-500 hover:text-white transition text-xl">
-                <i class="fab fa-orcid"></i>
-              </a>
-              <a href="https://www.lens.org/lens/profile/645879592/scholar" class="hover:text-white transition">
-                <img src="https://static.lens.org/lens/9.5.2/img/favicon-32x32.png" alt="Lens Profile" class="w-5 h-5 mt-[6px]">
-              </a>
-            </div>
+  <!-- About Section -->
+  <section class="gradient-bg py-20 relative">
+    <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+      <!-- Left Column: Text and Buttons -->
+      <div class="md:w-1/2 mb-10 md:mb-0">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Aaron Enten</h1>
+        <h2 class="text-2xl md:text-3xl text-indigo-600 mb-6">BioEngineering Innovation Management & <br> Technology
+          Commercialization</h2>
+        <p class="text-lg text-gray-600 mb-8">Experience building and scaling medical technology products with a focus
+          on user experience and business impact.</p>
+        <div class="flex items-end space-x-4">
+          <!-- Buttons Group -->
+          <div class="flex space-x-4">
+            <a href="#contact" class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg transition">Get
+              In Touch</a>
+            <a href="#experience"
+              class="border border-indigo-600 text-indigo-600 hover:bg-indigo-50 px-6 py-3 rounded-lg transition">View
+              Experience</a>
+            <a href="/src/Resume-ACE_2025_v2.pdf" download
+              class="bg-indigo-200 text-indigo-600 hover:bg-indigo-50 px-6 py-3 rounded-lg transition">
+              Download Resume
+            </a>
           </div>
-        </div>
-    
-        <!-- Right Column: Image with Icons -->
-        <div class="md:w-1/2 flex justify-center relative">
-          <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-xl">
-            <div class="w-full h-full bg-indigo-100 flex items-center justify-center">
-              <img src="src/assets/Insight Optics - Aaron Enten Headshot.jpg" alt="Aaron Enten Headshot" class="object-cover w-full h-full">
-            </div>
+
+          <!-- Icons Group, bottom-aligned with buttons -->
+          <div class="flex space-x-4 ml-4 self-end">
+            <a href="https://www.linkedin.com/in/aaronenten" class="text-blue-500 hover:text-white transition text-xl">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://orcid.org/0009-0004-1401-2501" class="text-green-500 hover:text-white transition text-xl">
+              <i class="fab fa-orcid"></i>
+            </a>
+            <a href="https://www.lens.org/lens/profile/645879592/scholar" class="hover:text-white transition">
+              <img src="https://static.lens.org/lens/9.5.2/img/favicon-32x32.png" alt="Lens Profile"
+                class="w-5 h-5 mt-[6px] hover:grayscale transition duration-300">
+            </a>
           </div>
-    
         </div>
       </div>
-    </section>
-    
 
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-12">About Me</h2>
-            <div class="max-w-4xl mx-auto text-justify">
-                
-                <div x-data="{ activeTab: null }" class="mt-8">
-
-                  <!-- Tab Cards -->
-                  <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
-                    <!-- Card 1 -->
-                    <div @click="activeTab = activeTab === 0 ? null : 0"
-                         :class="activeTab === 0 ? 'bg-indigo-200' : 'bg-indigo-50'"
-                         class="p-4 rounded-lg text-center cursor-pointer transition shadow hover:shadow-lg">
-                      <div class="text-indigo-600 text-3xl mb-2">
-                        <i class="fas fa-briefcase"></i>
-                      </div>
-                      <h3 class="font-bold">15+ Years</h3>
-                      <p class="text-sm text-gray-600">Experience</p>
-                    </div>
-                
-                    <!-- Card 2 -->
-                    <div @click="activeTab = activeTab === 1 ? null : 1"
-                         :class="activeTab === 1 ? 'bg-indigo-200' : 'bg-indigo-50'"
-                         class="p-4 rounded-lg text-center cursor-pointer transition shadow hover:shadow-lg">
-                      <div class="text-indigo-600 text-3xl mb-2">
-                        <i class="fas fa-users"></i>
-                      </div>
-                      <h3 class="font-bold">150+ People</h3>
-                      <p class="text-sm text-gray-600">Teams Led</p>
-                    </div>
-                
-                    <!-- Card 3 -->
-                    <div @click="activeTab = activeTab === 2 ? null : 2"
-                         :class="activeTab === 2 ? 'bg-indigo-200' : 'bg-indigo-50'"
-                         class="p-4 rounded-lg text-center cursor-pointer transition shadow hover:shadow-lg">
-                      <div class="text-indigo-600 text-3xl mb-2">
-                        <i class="fas fa-project-diagram"></i>
-                      </div>
-                      <h3 class="font-bold">30+ Projects</h3>
-                      <p class="text-sm text-gray-600">Delivered</p>
-                    </div>
-                
-                    <!-- Card 4 -->
-                    <div @click="activeTab = activeTab === 3 ? null : 3"
-                         :class="activeTab === 3 ? 'bg-indigo-200' : 'bg-indigo-50'"
-                         class="p-4 rounded-lg text-center cursor-pointer transition shadow hover:shadow-lg">
-                      <div class="text-indigo-600 text-3xl mb-2">
-                        <i class="fas fa-globe"></i>
-                      </div>
-                      <h3 class="font-bold">Global</h3>
-                      <p class="text-sm text-gray-600">Experience</p>
-                    </div>
-                  </div>
-                
-                  <!-- Shared Content Area -->
-                  <div x-show="activeTab !== null" x-collapse class="bg-white border border-indigo-200 rounded-xl p-6 shadow transition-all">
-                    <template x-if="activeTab === 0">
-                      <p class="text-lg text-gray-600">
-                        <!-- I'm a product and technology leader with extensive experience in building and scaling medical products. -->
-                        I have more than 15 years of experience in medical device design, commercialization, and innovation management. 
-                        My expertise originates from the management, founding, and consulting of small and mid-cap companies. I have 
-                        brought multiple companies through ideation to product scale with exits and have led multinational research 
-                        and development teams. I have held faculty and instructor positions in Instrumentation, Innovation, 
-                        and Mechatronics/Systems Engineering to share knowledge and skills at the University of Washington and Georgia 
-                        Tech. I continue to advise emerging growth companies as a business advisor with the NIH Lab2Mkt program.
-                      </p>
-                      
-                    </template>
-                    <template x-if="activeTab === 1">
-                      <p class="text-gray-700 text-lg">
-                        I lead through influence to create a culture of care, fostering alignment, accountability, and psychological 
-                        safety across teams. By partnering across functions and levels, I drive strategic decision-making and ensure 
-                        clarity of purpose. I’ve built and scaled global, interdisciplinary teams, the largest of which totaling 150+ 
-                        engineers, designers, scientists, and students, uniting them through shared values and measurable goals. My 
-                        focus on structured execution, mentorship, and outcome alignment enables high-performance cultures that deliver 
-                        innovation and operational excellence. Throughout my career, I've focused on leveraging technology to solve 
-                        complex business problems and create meaningful impact.
-                      </p>
-                    </template>
-                    <template x-if="activeTab === 2">
-                      <p class="text-gray-700 text-lg">
-                        I’ve delivered personally overseen the successful construction and launch of 9 projects and directly advised 
-                        or overseen over 30. These successful product launches span diagnostics, implants, and software tools. I've 
-                        owned the end-to-end process from ideation to R&D and commercialization. My leadership ensures each product’s 
-                        readiness for both market and clinical impact. My preference it to build disruptive technologies based on Clayton 
-                        Christensen definition paired with high impact solutions.
-                        <br> <a href="#projects" class="inline-block mt-3 bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition">View Projects</a>
-                      </p>
-                    </template>
-                    <template x-if="activeTab === 3">
-                      <p class="text-gray-700 text-lg">
-                        My educational and professional background is centered on customer discovery in both developed countries and 
-                        LMICs. My projects and advisory has resulted in work with stakeholders in North America, Europe, Africa, and 
-                        Asia on medtech development and global commercialization efforts. I've helped build products combating infant 
-                        and maternal mortality, improve access to advanced histopathology resources, validate donated oxygen concentrators, 
-                        and air drop emergency rations to regions impacted by disasters. I've deployed through government incentive programs, 
-                        operated with direct to consumer models, and built and managed international teams and partnerships.
-                      </p>
-                    </template>
-                  </div>
-                
-                </div>
-                
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="py-20 bg-gray-100">
-      <div class="container mx-auto px-6">
-          <h2 class="text-3xl font-bold text-center mb-12">Skills & Expertise</h2>
-          
-          <div class="max-w-6xl mx-auto">
-              <div class="grid grid-cols-1 md:grid-cols-2 md:grid-cols-3 gap-8">
-                  <div>
-                      <h3 class="text-xl font-bold mb-4 text-gray-800">Product Management</h3>
-                      <div class="flex flex-wrap gap-3">
-                          <span class="skill-pill bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full">Product Strategy</span>
-                          <span class="skill-pill bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full">Roadmapping</span>
-                          <span class="skill-pill bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full">User Research</span>
-                          <span class="skill-pill bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full">Product Lifecycle Management</span>
-                          <span class="skill-pill bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full">Go-to-Market</span>
-                          <span class="skill-pill bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full">Product Development</span>
-                      </div>
-                  </div>
-                  
-                  <div>
-                      <h3 class="text-xl font-bold mb-4 text-gray-800">Technology</h3>
-                      <div class="flex flex-wrap gap-3">
-                          <span class="skill-pill bg-blue-100 text-blue-800 px-4 py-2 rounded-full">Software Architecture</span>
-                          <span class="skill-pill bg-blue-100 text-blue-800 px-4 py-2 rounded-full">AI/ML</span>
-                          <span class="skill-pill bg-blue-100 text-blue-800 px-4 py-2 rounded-full">Cloud Computing</span>
-                          <span class="skill-pill bg-blue-100 text-blue-800 px-4 py-2 rounded-full">APIs</span>
-                          <span class="skill-pill bg-blue-100 text-blue-800 px-4 py-2 rounded-full">Data Analytics</span>
-                          <span class="skill-pill bg-blue-100 text-blue-800 px-4 py-2 rounded-full">Computer Vision</span>
-                          <span class="skill-pill bg-blue-100 text-blue-800 px-4 py-2 rounded-full">Data Science</span>
-                          <span class="skill-pill bg-blue-100 text-blue-800 px-4 py-2 rounded-full">Technology Strategy</span>
-                      </div>
-                  </div>
-                  
-                  <div>
-                      <h3 class="text-xl font-bold mb-4 text-gray-800">Leadership</h3>
-                      <div class="flex flex-wrap gap-3">
-                          <span class="skill-pill bg-purple-100 text-purple-800 px-4 py-2 rounded-full">Team Building</span>
-                          <span class="skill-pill bg-purple-100 text-purple-800 px-4 py-2 rounded-full">Cross-functional Leadership</span>
-                          <span class="skill-pill bg-purple-100 text-purple-800 px-4 py-2 rounded-full">Mentorship</span>
-                          <span class="skill-pill bg-purple-100 text-purple-800 px-4 py-2 rounded-full">Strategic Planning</span>
-                          <span class="skill-pill bg-purple-100 text-purple-800 px-4 py-2 rounded-full">Executive Leadership</span>
-                          <span class="skill-pill bg-purple-100 text-purple-800 px-4 py-2 rounded-full">Stakeholder management</span>
-                          <span class="skill-pill bg-purple-100 text-purple-800 px-4 py-2 rounded-full">Culture Creation</span>
-                          <span class="skill-pill bg-purple-100 text-purple-800 px-4 py-2 rounded-full">Culture Alignment</span>
-                      </div>
-                  </div>
-                  
-                  <div>
-                      <h3 class="text-xl font-bold mb-4 text-gray-800">Business</h3>
-                      <div class="flex flex-wrap gap-3">                                                      
-                          <span class="skill-pill bg-green-100 text-green-800 px-4 py-2 rounded-full">Market Analysis</span>
-                          <span class="skill-pill bg-green-100 text-green-800 px-4 py-2 rounded-full">Venture Capital</span>
-                          <span class="skill-pill bg-green-100 text-green-800 px-4 py-2 rounded-full">Business Development</span>
-                          <span class="skill-pill bg-green-100 text-green-800 px-4 py-2 rounded-full">Strategic Planning</span>
-                          <span class="skill-pill bg-green-100 text-green-800 px-4 py-2 rounded-full">Budgeting & Forecasting</span>
-                          <span class="skill-pill bg-green-100 text-green-800 px-4 py-2 rounded-full">Business Model Innovation</span>
-                          <span class="skill-pill bg-green-100 text-green-800 px-4 py-2 rounded-full">Negotiation</span>
-                          <span class="skill-pill bg-green-100 text-green-800 px-4 py-2 rounded-full">Product-Market Fit</span>
-                      </div>
-                  </div>
-                  <div>
-                    <h3 class="text-xl font-bold mb-4 text-gray-800">Research & Development</h3>
-                    <div class="flex flex-wrap gap-3">                                                      
-                      <span class="skill-pill bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full">Research Management</span>
-                      
-                      <span class="skill-pill bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full">Medical Device Lifecycle</span>
-                      <span class="skill-pill bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full">Scientific Publication</span>
-                      <span class="skill-pill bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full">Technology Trends</span>
-                      <span class="skill-pill bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full">Innovation Development</span>
-                      <span class="skill-pill bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full">Product Engineering</span>
-                      <span class="skill-pill bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full">Rapid prototyping</span>
-                      
-                    </div>
-                </div>
-                <div>
-                  <h3 class="text-xl font-bold mb-4 text-gray-800">Scientific</h3>
-                  <div class="flex flex-wrap gap-3">                                                      
-                    <span class="skill-pill bg-orange-100 text-orange-800 px-4 py-2 rounded-full">Biomedical Engineering</span>
-                    <span class="skill-pill bg-orange-100 text-orange-800 px-4 py-2 rounded-full">Biotechnology</span>
-                    <span class="skill-pill bg-orange-100 text-orange-800 px-4 py-2 rounded-full">Cell and Tissue Engineering</span>
-                    <span class="skill-pill bg-orange-100 text-orange-800 px-4 py-2 rounded-full">Experimental Design</span>
-                    <span class="skill-pill bg-orange-100 text-orange-800 px-4 py-2 rounded-full">Micro-Electromechanical Systems</span>
-                    <span class="skill-pill bg-orange-100 text-orange-800 px-4 py-2 rounded-full">Microfluidics</span>
-                    <span class="skill-pill bg-orange-100 text-orange-800 px-4 py-2 rounded-full">Mathematical Modeling</span>
-                  </div>
-              </div>
-              </div>
+      <!-- Right Column: Image with Icons -->
+      <div class="md:w-1/2 flex justify-center relative">
+        <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-xl">
+          <div class="w-full h-full bg-indigo-100 flex items-center justify-center">
+            <img src="src/assets/Insight Optics - Aaron Enten Headshot.jpg" alt="Aaron Enten Headshot"
+              class="object-cover w-full h-full">
           </div>
+        </div>
+
       </div>
+    </div>
+  </section>
+
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">About Me</h2>
+      <div class="max-w-4xl mx-auto text-justify">
+
+        <div x-data="{ activeTab: null }" class="mt-8">
+
+          <!-- Tab Cards -->
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+            <!-- Card 1 -->
+            <div @click="activeTab = activeTab === 0 ? null : 0"
+              :class="activeTab === 0 ? 'bg-indigo-200' : 'bg-indigo-50'"
+              class="p-4 rounded-lg text-center cursor-pointer transition shadow hover:shadow-lg">
+              <div class="text-indigo-600 text-3xl mb-2">
+                <i class="fas fa-briefcase"></i>
+              </div>
+              <h3 class="font-bold">15+ Years</h3>
+              <p class="text-sm text-gray-600">Experience</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div @click="activeTab = activeTab === 1 ? null : 1"
+              :class="activeTab === 1 ? 'bg-indigo-200' : 'bg-indigo-50'"
+              class="p-4 rounded-lg text-center cursor-pointer transition shadow hover:shadow-lg">
+              <div class="text-indigo-600 text-3xl mb-2">
+                <i class="fas fa-users"></i>
+              </div>
+              <h3 class="font-bold">150+ People</h3>
+              <p class="text-sm text-gray-600">Teams Led</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div @click="activeTab = activeTab === 2 ? null : 2"
+              :class="activeTab === 2 ? 'bg-indigo-200' : 'bg-indigo-50'"
+              class="p-4 rounded-lg text-center cursor-pointer transition shadow hover:shadow-lg">
+              <div class="text-indigo-600 text-3xl mb-2">
+                <i class="fas fa-project-diagram"></i>
+              </div>
+              <h3 class="font-bold">30+ Projects</h3>
+              <p class="text-sm text-gray-600">Delivered</p>
+            </div>
+
+            <!-- Card 4 -->
+            <div @click="activeTab = activeTab === 3 ? null : 3"
+              :class="activeTab === 3 ? 'bg-indigo-200' : 'bg-indigo-50'"
+              class="p-4 rounded-lg text-center cursor-pointer transition shadow hover:shadow-lg">
+              <div class="text-indigo-600 text-3xl mb-2">
+                <i class="fas fa-globe"></i>
+              </div>
+              <h3 class="font-bold">Global</h3>
+              <p class="text-sm text-gray-600">Experience</p>
+            </div>
+          </div>
+
+          <!-- Shared Content Area -->
+          <div x-show="activeTab !== null" x-collapse
+            class="bg-white border border-indigo-200 rounded-xl p-6 shadow transition-all">
+            <template x-if="activeTab === 0">
+              <p class="text-lg text-gray-600">
+                <!-- I'm a product and technology leader with extensive experience in building and scaling medical products. -->
+                I have more than 15 years of experience in medical device design, commercialization, and innovation
+                management.
+                My expertise originates from the management, founding, and consulting of small and mid-cap companies. I
+                have
+                brought multiple companies through ideation to product scale with exits and have led multinational
+                research
+                and development teams. I have held faculty and instructor positions in Instrumentation, Innovation,
+                and Mechatronics/Systems Engineering to share knowledge and skills at the University of Washington and
+                Georgia
+                Tech. I continue to advise emerging growth companies as a business advisor with the NIH Lab2Mkt program.
+              </p>
+
+            </template>
+            <template x-if="activeTab === 1">
+              <p class="text-gray-700 text-lg">
+                I lead through influence to create a culture of care, fostering alignment, accountability, and
+                psychological
+                safety across teams. By partnering across functions and levels, I drive strategic decision-making and
+                ensure
+                clarity of purpose. I’ve built and scaled global, interdisciplinary teams, the largest of which totaling
+                150+
+                engineers, designers, scientists, and students, uniting them through shared values and measurable goals.
+                My
+                focus on structured execution, mentorship, and outcome alignment enables high-performance cultures that
+                deliver
+                innovation and operational excellence. Throughout my career, I've focused on leveraging technology to
+                solve
+                complex business problems and create meaningful impact.
+              </p>
+            </template>
+            <template x-if="activeTab === 2">
+              <p class="text-gray-700 text-lg">
+                I’ve delivered personally overseen the successful construction and launch of 9 projects and directly
+                advised
+                or overseen over 30. These successful product launches span diagnostics, implants, and software tools.
+                I've
+                owned the end-to-end process from ideation to R&D and commercialization. My leadership ensures each
+                product’s
+                readiness for both market and clinical impact. My preference it to build disruptive technologies based
+                on Clayton
+                Christensen definition paired with high impact solutions.
+                <br> <a href="#projects"
+                  class="inline-block mt-3 bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition">View
+                  Projects</a>
+              </p>
+            </template>
+            <template x-if="activeTab === 3">
+              <p class="text-gray-700 text-lg">
+                My educational and professional background is centered on customer discovery in both developed countries
+                and
+                LMICs. My projects and advisory has resulted in work with stakeholders in North America, Europe, Africa,
+                and
+                Asia on medtech development and global commercialization efforts. I've helped build products combating
+                infant
+                and maternal mortality, improve access to advanced histopathology resources, validate donated oxygen
+                concentrators,
+                and air drop emergency rations to regions impacted by disasters. I've deployed through government
+                incentive programs,
+                operated with direct to consumer models, and built and managed international teams and partnerships.
+              </p>
+            </template>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 bg-gray-100">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">Skills & Expertise</h2>
+
+      <div class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 md:grid-cols-3 gap-8">
+          <div>
+            <h3 class="text-xl font-bold mb-4 text-gray-800">Product Management</h3>
+            <div class="flex flex-wrap gap-3">
+              <span class="skill-pill bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full">Product Strategy</span>
+              <span class="skill-pill bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full">Roadmapping</span>
+              <span class="skill-pill bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full">User Research</span>
+              <span class="skill-pill bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full">Product Lifecycle
+                Management</span>
+              <span class="skill-pill bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full">Go-to-Market</span>
+              <span class="skill-pill bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full">Product Development</span>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-bold mb-4 text-gray-800">Technology</h3>
+            <div class="flex flex-wrap gap-3">
+              <span class="skill-pill bg-blue-100 text-blue-800 px-4 py-2 rounded-full">Software Architecture</span>
+              <span class="skill-pill bg-blue-100 text-blue-800 px-4 py-2 rounded-full">AI/ML</span>
+              <span class="skill-pill bg-blue-100 text-blue-800 px-4 py-2 rounded-full">Cloud Computing</span>
+              <span class="skill-pill bg-blue-100 text-blue-800 px-4 py-2 rounded-full">APIs</span>
+              <span class="skill-pill bg-blue-100 text-blue-800 px-4 py-2 rounded-full">Data Analytics</span>
+              <span class="skill-pill bg-blue-100 text-blue-800 px-4 py-2 rounded-full">Computer Vision</span>
+              <span class="skill-pill bg-blue-100 text-blue-800 px-4 py-2 rounded-full">Data Science</span>
+              <span class="skill-pill bg-blue-100 text-blue-800 px-4 py-2 rounded-full">Technology Strategy</span>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-bold mb-4 text-gray-800">Leadership</h3>
+            <div class="flex flex-wrap gap-3">
+              <span class="skill-pill bg-purple-100 text-purple-800 px-4 py-2 rounded-full">Team Building</span>
+              <span class="skill-pill bg-purple-100 text-purple-800 px-4 py-2 rounded-full">Cross-functional
+                Leadership</span>
+              <span class="skill-pill bg-purple-100 text-purple-800 px-4 py-2 rounded-full">Mentorship</span>
+              <span class="skill-pill bg-purple-100 text-purple-800 px-4 py-2 rounded-full">Strategic Planning</span>
+              <span class="skill-pill bg-purple-100 text-purple-800 px-4 py-2 rounded-full">Executive Leadership</span>
+              <span class="skill-pill bg-purple-100 text-purple-800 px-4 py-2 rounded-full">Stakeholder
+                management</span>
+              <span class="skill-pill bg-purple-100 text-purple-800 px-4 py-2 rounded-full">Culture Creation</span>
+              <span class="skill-pill bg-purple-100 text-purple-800 px-4 py-2 rounded-full">Culture Alignment</span>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-bold mb-4 text-gray-800">Business</h3>
+            <div class="flex flex-wrap gap-3">
+              <span class="skill-pill bg-green-100 text-green-800 px-4 py-2 rounded-full">Market Analysis</span>
+              <span class="skill-pill bg-green-100 text-green-800 px-4 py-2 rounded-full">Venture Capital</span>
+              <span class="skill-pill bg-green-100 text-green-800 px-4 py-2 rounded-full">Business Development</span>
+              <span class="skill-pill bg-green-100 text-green-800 px-4 py-2 rounded-full">Strategic Planning</span>
+              <span class="skill-pill bg-green-100 text-green-800 px-4 py-2 rounded-full">Budgeting & Forecasting</span>
+              <span class="skill-pill bg-green-100 text-green-800 px-4 py-2 rounded-full">Business Model
+                Innovation</span>
+              <span class="skill-pill bg-green-100 text-green-800 px-4 py-2 rounded-full">Negotiation</span>
+              <span class="skill-pill bg-green-100 text-green-800 px-4 py-2 rounded-full">Product-Market Fit</span>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-4 text-gray-800">Research & Development</h3>
+            <div class="flex flex-wrap gap-3">
+              <span class="skill-pill bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full">Research Management</span>
+
+              <span class="skill-pill bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full">Medical Device
+                Lifecycle</span>
+              <span class="skill-pill bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full">Scientific
+                Publication</span>
+              <span class="skill-pill bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full">Technology Trends</span>
+              <span class="skill-pill bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full">Innovation
+                Development</span>
+              <span class="skill-pill bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full">Product Engineering</span>
+              <span class="skill-pill bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full">Rapid prototyping</span>
+
+            </div>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-4 text-gray-800">Scientific</h3>
+            <div class="flex flex-wrap gap-3">
+              <span class="skill-pill bg-orange-100 text-orange-800 px-4 py-2 rounded-full">Biomedical
+                Engineering</span>
+              <span class="skill-pill bg-orange-100 text-orange-800 px-4 py-2 rounded-full">Biotechnology</span>
+              <span class="skill-pill bg-orange-100 text-orange-800 px-4 py-2 rounded-full">Cell and Tissue
+                Engineering</span>
+              <span class="skill-pill bg-orange-100 text-orange-800 px-4 py-2 rounded-full">Experimental Design</span>
+              <span class="skill-pill bg-orange-100 text-orange-800 px-4 py-2 rounded-full">Micro-Electromechanical
+                Systems</span>
+              <span class="skill-pill bg-orange-100 text-orange-800 px-4 py-2 rounded-full">Microfluidics</span>
+              <span class="skill-pill bg-orange-100 text-orange-800 px-4 py-2 rounded-full">Mathematical Modeling</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Personal Projects Section -->
   <section id="projects" class="py-20 bg-white">
-      <div class="container mx-auto px-6">
-          <h2 class="text-3xl font-bold text-center mb-12">Professional Projects</h2>
-          
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              <!-- Project Card -->
-              <div class="project-card bg-white border border-gray-200 rounded-xl overflow-hidden shadow-md transition duration-300">
-                <div class="h-48 bg-blue-100 flex items-center justify-center">
-                  <i class="fas fa-gamepad text-6xl text-blue-400"></i>
-                </div>
-                <div class="p-6">
-                  <h3 class="text-xl font-bold mb-2">Bilateral Amputee Gaming Controller</h3>
-                  <p class="text-gray-600 mb-4">Engineered a custom PC controller for bilateral amputees to enhance gaming accessibility and inclusivity.</p>
-                  <div class="flex flex-wrap gap-2">
-                    <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">Rapid prototyping</span>
-                    <span class="text-xs bg-orange-100 text-orange-800 px-2 py-1 rounded">Biomedical Engineering</span>
-                    <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">Product Engineering</span>
-                    <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">Innovation Development</span>
-                    <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">Technology Trends</span>
-                    <span class="text-xs bg-indigo-100 text-indigo-800 px-2 py-1 rounded">Product Development</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="project-card bg-white border border-gray-200 rounded-xl overflow-hidden shadow-md transition duration-300">
-                <div class="h-48 bg-green-100 flex items-center justify-center">
-                  <i class="fas fa-heartbeat text-6xl text-green-400"></i>
-                </div>
-                <div class="p-6">
-                  <h3 class="text-xl font-bold mb-2">Heal Ulcer Detection and Prevention Unit</h3>
-                  <p class="text-gray-600 mb-4">Designed a diagnostic device to detect early signs of pressure ulcers and help prevent long-term complications.</p>
-                  <div class="flex flex-wrap gap-2">
-                    <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">Medical Device Lifecycle</span>
-                    <span class="text-xs bg-orange-100 text-orange-800 px-2 py-1 rounded">Biomedical Engineering</span>
-                    <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">Research Management</span>
-                    <span class="text-xs bg-indigo-100 text-indigo-800 px-2 py-1 rounded">User Research</span>
-                    <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">Product Engineering</span>
-                    <span class="text-xs bg-indigo-100 text-indigo-800 px-2 py-1 rounded">Product Development</span>                    
-                  </div>
-                </div>
-              </div>
-              
-              <div class="project-card bg-white border border-gray-200 rounded-xl overflow-hidden shadow-md transition duration-300">
-                <div class="h-48 bg-red-100 flex items-center justify-center">
-                  <i class="fas fa-lungs text-6xl text-red-400"></i>
-                </div>
-                <div class="p-6">
-                  <h3 class="text-xl font-bold mb-2">Low Cost Oxygen Concentration Analyzer</h3>
-                  <p class="text-gray-600 mb-4">Developed a cost-effective oxygen analyzer tailored for resource-limited clinical settings.</p>
-                  <div class="flex flex-wrap gap-2">
-                    <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">Product Engineering</span>
-                    <span class="text-xs bg-indigo-100 text-indigo-800 px-2 py-1 rounded">Product Strategy</span>
-                    <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">Rapid prototyping</span>
-                    <span class="text-xs bg-orange-100 text-orange-800 px-2 py-1 rounded">Biomedical Engineering</span>
-                    <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">Market Analysis</span>
-                    <span class="text-sm bg-purple-100 text-purple-800 px-2 py-1 rounded">Executive Leadership</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="project-card bg-white border border-gray-200 rounded-xl overflow-hidden shadow-md transition duration-300">
-                <div class="h-48 bg-yellow-100 flex items-center justify-center">
-                  <i class="fas fa-brain text-6xl text-yellow-400"></i>
-                </div>
-                <div class="p-6">
-                  <h3 class="text-xl font-bold mb-2">Simulated Muscle Memory Architecture</h3>
-                  <p class="text-gray-600 mb-4">Built an feedback-driven architecture simulating muscle memory patterns for myoelectric prosthetic control.</p>
-                  <div class="flex flex-wrap gap-2">
-                    <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Data Science</span>
-                    <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">Innovation Development</span>
-                    <span class="text-xs bg-orange-100 text-orange-800 px-2 py-1 rounded">Biomedical Engineering</span>
-                    <span class="text-xs bg-indigo-100 text-indigo-800 px-2 py-1 rounded">Product Development</span>
-                    <span class="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded">Cross-functional Leadership</span>
-                    <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Software Architecture</span>
-                    <span class="text-xs bg-indigo-100 text-indigo-800 px-2 py-1 rounded">Product Lifecycle Management</span>
-                    <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">Market Analysis</span>
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">Professional Projects</h2>
 
-                  </div>
-                </div>
-              </div>
-              
-              <div class="project-card bg-white border border-gray-200 rounded-xl overflow-hidden shadow-md transition duration-300">
-                <div class="h-48 bg-purple-100 flex items-center justify-center">
-                  <i class="fas fa-vial text-6xl text-purple-400"></i>
-                </div>
-                <div class="p-6">
-                  <h3 class="text-xl font-bold mb-2">Non-invasive Hemoglobinometer</h3>
-                  <p class="text-gray-600 mb-4">Created a low-cost, non-invasive hemoglobin measurement tool for use in underserved regions.</p>
-                  <div class="flex flex-wrap gap-2">
-                    <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">Medical Device Lifecycle</span>
-                    <span class="text-xs bg-indigo-100 text-indigo-800 px-2 py-1 rounded">Product Strategy</span>
-                    <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">Product-Market Fit</span>
-                    <span class="text-xs bg-indigo-100 text-indigo-800 px-2 py-1 rounded">Product Lifecycle Management</span>
-                    <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">Innovation Development</span>
-                    <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Technology Strategy</span>
-                    <span class="text-xs bg-orange-100 text-orange-800 px-2 py-1 rounded">International Team Management</span>
-                    <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Data Analytics</span>
-                    
-                  </div>
-                </div>
-              </div>
-              
-              <div class="project-card bg-white border border-gray-200 rounded-xl overflow-hidden shadow-md transition duration-300">
-                <div class="h-48 bg-pink-100 flex items-center justify-center">
-                  <i class="fas fa-eye text-6xl text-pink-400"></i>
-                </div>
-                <div class="p-6">
-                  <h3 class="text-xl font-bold mb-2">Smartphone Diabetic Retinopathy Screening Tool</h3>
-                  <p class="text-gray-600 mb-4">Developed a smartphone-based AI/ML tool to assist diabetic retinopathy screening in low-resource areas.</p>
-                  <div class="flex flex-wrap gap-2">
-                    <span class="text-xs bg-indigo-100 text-indigo-800 px-2 py-1 rounded">Product Strategy</span>
-                    <span class="text-xs bg-indigo-100 text-indigo-800 px-2 py-1 rounded">Roadmapping</span>
-                    <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">AI/ML</span>
-                    <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Computer Vision</span>
-                    <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Cloud Computing</span>
-                    <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">Business Model Innovation</span>
-                    <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">Venture Capital</span>
-                    <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">Business Development</span>
-                    <span class="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded">Culture Alignment</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="project-card bg-white border border-gray-200 rounded-xl overflow-hidden shadow-md transition duration-300">
-                <div class="h-48 bg-indigo-100 flex items-center justify-center">
-                  <i class="fas fa-dna text-6xl text-indigo-400"></i>
-                </div>
-                <div class="p-6">
-                  <h3 class="text-xl font-bold mb-2">Perfusion Bioreactor to Improve Regenerative Medicine</h3>
-                  <p class="text-gray-600 mb-4">Designed a bioreactor system to enhance uniformity and depth of cell seeding in tissue engineering.</p>
-                  <div class="flex flex-wrap gap-2">
-                    <span class="text-xs bg-orange-100 text-orange-800 px-2 py-1 rounded">Cell and Tissue Engineering</span>
-                    <span class="text-xs bg-orange-100 text-orange-800 px-2 py-1 rounded">Biotechnology</span>
-                    <span class="text-xs bg-orange-100 text-orange-800 px-2 py-1 rounded">Experimental Design</span>
-                    <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">Scientific Publication</span>
-                    <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">Research Management</span>
-                    <span class="text-xs bg-orange-100 text-orange-800 px-2 py-1 rounded">Mathematical Modeling</span>
-                    <span class="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded">Team Building</span>
-                    <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">Business Development</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="project-card bg-white border border-gray-200 rounded-xl overflow-hidden shadow-md transition duration-300">
-                <div class="h-48 bg-teal-100 flex items-center justify-center">
-                  <i class="fas fa-microscope text-6xl text-teal-400"></i>
-                </div>
-                <div class="p-6">
-                  <h3 class="text-xl font-bold mb-2">Smartphone Histopathology Whole Slide Imaging QA Tool</h3>
-                  <p class="text-gray-600 mb-4">Created a computer vision tool for low-cost, smartphone-enabled histopathology analysis in LMICs.</p>
-                  <div class="flex flex-wrap gap-2">
-                    <span class="text-xs bg-indigo-100 text-indigo-800 px-2 py-1 rounded">Go-to-Market</span>
-                    <span class="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded">Stakeholder management</span>
-                    <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Computer Vision</span>
-                    <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">AI/ML</span>
-                    <span class="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded">Strategic Planning</span>
-                    <span class="text-xs bg-orange-100 text-orange-800 px-2 py-1 rounded">Product Lifecycle Management</span>
-                    <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">Negotiation</span>
-                    <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">Innovation Development</span>
-                    <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">Market Analysis</span>
-                    
-                  </div>
-                </div>
-              </div>
-              
-              <div class="project-card bg-white border border-gray-200 rounded-xl overflow-hidden shadow-md transition duration-300">
-                <div class="h-48 bg-gray-100 flex items-center justify-center">
-                  <i class="fas fa-user-md text-6xl text-gray-400"></i>
-                </div>
-                <div class="p-6">
-                  <h3 class="text-xl font-bold mb-2">Non-invasive Intracranial Pressure Monitor</h3>
-                  <p class="text-gray-600 mb-4">Developed a monitoring tool for detecting intracranial hypertension without the need for surgical procedures.</p>
-                  <div class="flex flex-wrap gap-2">
-                    <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">Medical Device Lifecycle</span>
-                    <span class="text-xs bg-red-100 text-red-800 px-2 py-1 rounded">Care Managemnt</span>
-                    <span class="text-xs bg-orange-100 text-orange-800 px-2 py-1 rounded">Biomedical Engineering</span>
-                    <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">Research Management</span>
-                    <span class="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded">Executive Leadership</span>
-                    <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">Budgeting & Forecasting</span>
-                    <span class="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded">Culture Creation</span>
-                    <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">Business Model Innovation</span>
-                  </div>
-                </div>
-              </div>
-              
-              
-              
-              
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <!-- Project Card -->
+        <div
+          class="project-card bg-white border border-gray-200 rounded-xl overflow-hidden shadow-md transition duration-300">
+          <div class="h-48 bg-blue-100 flex items-center justify-center">
+            <i class="fas fa-gamepad text-6xl text-blue-400"></i>
           </div>
-      </div>
-  </section>
-<!-- Advised Projects Section -->
-  <section class="py-20 bg-white">
-      <div class="container mx-auto px-6">
-          <h2 class="text-3xl font-bold text-center mb-12">Advised Projects</h2>
-          
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              <!-- Project Card -->
-              <div class="project-card bg-red-100 border border-red-300 rounded-xl overflow-hidden shadow-md transition duration-300">
-                <div class="p-6">
-                  <h3 class="text-xl font-bold mb-2">SomerAI: Rebar Tying Robot</h3>
-                  <p class="text-gray-600 mb-4">Engineered an autonomous robotic system for efficient and precise rebar tying in construction environments.</p>
-                  <div class="flex flex-wrap gap-2">
-                    <span class="text-xs bg-red-200 text-red-800 px-2 py-1 rounded">Product Engineering</span>
-                    <span class="text-xs bg-red-200 text-red-800 px-2 py-1 rounded">Automation</span>
-                    <span class="text-xs bg-red-200 text-red-800 px-2 py-1 rounded">Innovation Development</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="project-card bg-blue-100 border border-blue-300 rounded-xl overflow-hidden shadow-md transition duration-300">
-                <div class="p-6">
-                  <h3 class="text-xl font-bold mb-2">Heat Transfer Modeling of Satellite Electrical Systems</h3>
-                  <p class="text-gray-600 mb-4">Developed simulation models to analyze and optimize thermal management in satellite electrical subsystems.</p>
-                  <div class="flex flex-wrap gap-2">
-                    <span class="text-xs bg-blue-200 text-blue-800 px-2 py-1 rounded">Mathematical Modeling</span>
-                    <span class="text-xs bg-blue-200 text-blue-800 px-2 py-1 rounded">Experimental Design</span>
-                    <span class="text-xs bg-blue-200 text-blue-800 px-2 py-1 rounded">Software Architecture</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="project-card bg-green-100 border border-green-300 rounded-xl overflow-hidden shadow-md transition duration-300">
-                <div class="p-6">
-                  <h3 class="text-xl font-bold mb-2">Applied Hope Foundation: Remote Parachute Deployment</h3>
-                  <p class="text-gray-600 mb-4">Designed a parachute deployment and navigation system for delivering emergency aid to remote locations.</p>
-                  <div class="flex flex-wrap gap-2">
-                    <span class="text-xs bg-green-200 text-green-800 px-2 py-1 rounded">Rapid Prototyping</span>
-                    <span class="text-xs bg-green-200 text-green-800 px-2 py-1 rounded">Product Development</span>
-                    <span class="text-xs bg-green-200 text-green-800 px-2 py-1 rounded">Innovation Development</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="project-card bg-purple-100 border border-purple-300 rounded-xl overflow-hidden shadow-md transition duration-300">
-                <div class="p-6">
-                  <h3 class="text-xl font-bold mb-2">Farnes Institute: Muscle Strength Testing Cage</h3>
-                  <p class="text-gray-600 mb-4">Built a physical therapy strength measurement device for consistent tracking of patient muscle recovery metrics.</p>
-                  <div class="flex flex-wrap gap-2">
-                    <span class="text-xs bg-purple-200 text-purple-800 px-2 py-1 rounded">Biomedical Engineering</span>
-                    <span class="text-xs bg-purple-200 text-purple-800 px-2 py-1 rounded">Medical Device Lifecycle</span>
-                    <span class="text-xs bg-purple-200 text-purple-800 px-2 py-1 rounded">Product Engineering</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="project-card bg-pink-100 border border-pink-300 rounded-xl overflow-hidden shadow-md transition duration-300">
-                <div class="p-6">
-                  <h3 class="text-xl font-bold mb-2">edispatched: UAV-Based Pilot Training</h3>
-                  <p class="text-gray-600 mb-4">Developed a training platform using drones to provide hands-on experience for aspiring UAV pilots.</p>
-                  <div class="flex flex-wrap gap-2">
-                    <span class="text-xs bg-pink-200 text-pink-800 px-2 py-1 rounded">Product Development</span>
-                    <span class="text-xs bg-pink-200 text-pink-800 px-2 py-1 rounded">User Research</span>
-                    <span class="text-xs bg-pink-200 text-pink-800 px-2 py-1 rounded">Technology Strategy</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="project-card bg-indigo-100 border border-indigo-300 rounded-xl overflow-hidden shadow-md transition duration-300">
-                <div class="p-6">
-                  <h3 class="text-xl font-bold mb-2">AstroTools: Lunar Navigation Beacon</h3>
-                  <p class="text-gray-600 mb-4">Designed a low-power lunar beacon system to aid robotic and human navigation during space exploration missions.</p>
-                  <div class="flex flex-wrap gap-2">
-                    <span class="text-xs bg-indigo-200 text-indigo-800 px-2 py-1 rounded">Technology Strategy</span>
-                    <span class="text-xs bg-indigo-200 text-indigo-800 px-2 py-1 rounded">Innovation Development</span>
-                    <span class="text-xs bg-indigo-200 text-indigo-800 px-2 py-1 rounded">Micro-Electromechanical Systems</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="project-card bg-orange-100 border border-orange-300 rounded-xl overflow-hidden shadow-md transition duration-300">
-                <div class="p-6">
-                  <h3 class="text-xl font-bold mb-2">CityLabs: Nuclear Battery for Heart Pacing</h3>
-                  <p class="text-gray-600 mb-4">Developed a compact nuclear battery prototype for powering long-term implantable cardiac devices.</p>
-                  <div class="flex flex-wrap gap-2">
-                    <span class="text-xs bg-orange-200 text-orange-800 px-2 py-1 rounded">Biotechnology</span>
-                    <span class="text-xs bg-orange-200 text-orange-800 px-2 py-1 rounded">Biomedical Engineering</span>
-                    <span class="text-xs bg-orange-200 text-orange-800 px-2 py-1 rounded">Innovation Development</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="project-card bg-teal-100 border border-teal-300 rounded-xl overflow-hidden shadow-md transition duration-300">
-                <div class="p-6">
-                  <h3 class="text-xl font-bold mb-2">XanderMed: Interlock Screw Medical Implant</h3>
-                  <p class="text-gray-600 mb-4">Designed a mechanically interlocking implant system to improve stability and integration in orthopedic surgeries.</p>
-                  <div class="flex flex-wrap gap-2">
-                    <span class="text-xs bg-teal-200 text-teal-800 px-2 py-1 rounded">Medical Device Lifecycle</span>
-                    <span class="text-xs bg-teal-200 text-teal-800 px-2 py-1 rounded">Product Engineering</span>
-                    <span class="text-xs bg-teal-200 text-teal-800 px-2 py-1 rounded">Biomedical Engineering</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="project-card bg-lime-100 border border-lime-300 rounded-xl overflow-hidden shadow-md transition duration-300">
-                <div class="p-6">
-                  <h3 class="text-xl font-bold mb-2">ColoTech: Precision in Colorectal Cancer Detection</h3>
-                  <p class="text-gray-600 mb-4">Led the development of advanced diagnostic tools to improve early detection and precision in colorectal cancer screening.</p>
-                  <div class="flex flex-wrap gap-2">
-                    <span class="text-xs bg-lime-200 text-lime-800 px-2 py-1 rounded">AI/ML</span>
-                    <span class="text-xs bg-lime-200 text-lime-800 px-2 py-1 rounded">Computer Vision</span>
-                    <span class="text-xs bg-lime-200 text-lime-800 px-2 py-1 rounded">Medical Device Lifecycle</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="project-card bg-gray-100 border border-gray-300 rounded-xl overflow-hidden shadow-md transition duration-300">
-                <div class="p-6">
-                  <h3 class="text-xl font-bold mb-2">OCTAVE: Optical Coherence Vibrometry Endoscope</h3>
-                  <p class="text-gray-600 mb-4">Engineered a novel OCT endoscope for real-time imaging and vibrational analysis in minimally invasive procedures.</p>
-                  <div class="flex flex-wrap gap-2">
-                    <span class="text-xs bg-gray-200 text-gray-800 px-2 py-1 rounded">Biomedical Engineering</span>
-                    <span class="text-xs bg-gray-200 text-gray-800 px-2 py-1 rounded">Cell and Tissue Engineering</span>
-                    <span class="text-xs bg-gray-200 text-gray-800 px-2 py-1 rounded">Product Engineering</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="project-card bg-yellow-100 border border-yellow-300 rounded-xl overflow-hidden shadow-md transition duration-300">
-                <div class="p-6">
-                  <h3 class="text-xl font-bold mb-2">ComfortScans: Breast MRI Biopsy Immobilization Device</h3>
-                  <p class="text-gray-600 mb-4">Designed a patient-centric immobilization platform for improved MRI-guided breast biopsy procedures.</p>
-                  <div class="flex flex-wrap gap-2">
-                    <span class="text-xs bg-yellow-200 text-yellow-800 px-2 py-1 rounded">Biomedical Engineering</span>
-                    <span class="text-xs bg-yellow-200 text-yellow-800 px-2 py-1 rounded">Rapid Prototyping</span>
-                    <span class="text-xs bg-yellow-200 text-yellow-800 px-2 py-1 rounded">Product Strategy</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="project-card bg-cyan-100 border border-cyan-300 rounded-xl overflow-hidden shadow-md transition duration-300">
-                <div class="p-6">
-                  <h3 class="text-xl font-bold mb-2">Lilypad Health: Multiparametric Health Pad</h3>
-                  <p class="text-gray-600 mb-4">Created a menstrual pad platform capable of detecting HR-HPV, fertility hormones, and thyroid levels for proactive reproductive health monitoring.</p>
-                  <div class="flex flex-wrap gap-2">
-                    <span class="text-xs bg-cyan-200 text-cyan-800 px-2 py-1 rounded">Biotechnology</span>
-                    <span class="text-xs bg-cyan-200 text-cyan-800 px-2 py-1 rounded">Innovation Development</span>
-                    <span class="text-xs bg-cyan-200 text-cyan-800 px-2 py-1 rounded">Medical Device Lifecycle</span>
-                  </div>
-                </div>
-              </div>                            
-              
-              <div class="project-card bg-sky-50 border border-sky-200 rounded-xl overflow-hidden shadow-md transition duration-300">
-                <div class="p-6">
-                  <h3 class="text-xl font-bold mb-2">OpenMindXR: AR/VR Training for Neurodiverse Children</h3>
-                  <p class="text-gray-600 mb-4">Built immersive training environments in AR/VR tailored to enhance learning for neurodiverse children.</p>
-                  <div class="flex flex-wrap gap-2">
-                    <span class="text-xs bg-sky-100 text-sky-600 px-2 py-1 rounded">XR Development</span>
-                    <span class="text-xs bg-sky-100 text-sky-600 px-2 py-1 rounded">User Research</span>
-                    <span class="text-xs bg-sky-100 text-sky-600 px-2 py-1 rounded">Education Technology</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="project-card bg-fuchsia-50 border border-fuchsia-200 rounded-xl overflow-hidden shadow-md transition duration-300">
-                <div class="p-6">
-                  <h3 class="text-xl font-bold mb-2">VA: Point of Care Ultrasound Remote Training System</h3>
-                  <p class="text-gray-600 mb-4">Developed a remote ultrasound training platform for physicians in rural and underserved communities.</p>
-                  <div class="flex flex-wrap gap-2">
-                    <span class="text-xs bg-fuchsia-100 text-fuchsia-600 px-2 py-1 rounded">Remote Learning</span>
-                    <span class="text-xs bg-fuchsia-100 text-fuchsia-600 px-2 py-1 rounded">Medical Training</span>
-                    <span class="text-xs bg-fuchsia-100 text-fuchsia-600 px-2 py-1 rounded">Biomedical Engineering</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="project-card bg-rose-50 border border-rose-200 rounded-xl overflow-hidden shadow-md transition duration-300">
-                <div class="p-6">
-                  <h3 class="text-xl font-bold mb-2">HuxleyMed: Sleep Apnea Diagnostic Monitoring Equipment</h3>
-                  <p class="text-gray-600 mb-4">Designed a compact, wearable system to monitor and diagnose sleep apnea at home with clinical-grade accuracy.</p>
-                  <div class="flex flex-wrap gap-2">
-                    <span class="text-xs bg-rose-100 text-rose-600 px-2 py-1 rounded">Product Engineering</span>
-                    <span class="text-xs bg-rose-100 text-rose-600 px-2 py-1 rounded">Biomedical Engineering</span>
-                    <span class="text-xs bg-rose-100 text-rose-600 px-2 py-1 rounded">Data Analytics</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="project-card bg-emerald-50 border border-emerald-200 rounded-xl overflow-hidden shadow-md transition duration-300">
-                <div class="p-6">
-                  <h3 class="text-xl font-bold mb-2">iCheck: Blood Sugar Monitoring Contact Lens</h3>
-                  <p class="text-gray-600 mb-4">Invented a contact lens capable of non-invasive monitoring of diabetic blood sugar levels in real-time.</p>
-                  <div class="flex flex-wrap gap-2">
-                    <span class="text-xs bg-emerald-100 text-emerald-600 px-2 py-1 rounded">Biotechnology</span>
-                    <span class="text-xs bg-emerald-100 text-emerald-600 px-2 py-1 rounded">Wearable Devices</span>
-                    <span class="text-xs bg-emerald-100 text-emerald-600 px-2 py-1 rounded">Innovation Development</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="project-card bg-violet-50 border border-violet-200 rounded-xl overflow-hidden shadow-md transition duration-300">
-                <div class="p-6">
-                  <h3 class="text-xl font-bold mb-2">Plutonic Inc.: Anonymous Teletherapy Platform</h3>
-                  <p class="text-gray-600 mb-4">Built a privacy-first teletherapy solution enabling patients to connect with therapists without identity disclosure.</p>
-                  <div class="flex flex-wrap gap-2">
-                    <span class="text-xs bg-violet-100 text-violet-600 px-2 py-1 rounded">Mental Health Tech</span>
-                    <span class="text-xs bg-violet-100 text-violet-600 px-2 py-1 rounded">Privacy Engineering</span>
-                    <span class="text-xs bg-violet-100 text-violet-600 px-2 py-1 rounded">Product Strategy</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="project-card bg-zinc-50 border border-zinc-200 rounded-xl overflow-hidden shadow-md transition duration-300">
-                <div class="p-6">
-                  <h3 class="text-xl font-bold mb-2">DePaul's International: Global Sourcing and Shipping</h3>
-                  <p class="text-gray-600 mb-4">Streamlined international sourcing workflows and built systems to improve shipping timelines and compliance.</p>
-                  <div class="flex flex-wrap gap-2">
-                    <span class="text-xs bg-zinc-100 text-zinc-600 px-2 py-1 rounded">Supply Chain Management</span>
-                    <span class="text-xs bg-zinc-100 text-zinc-600 px-2 py-1 rounded">Logistics Optimization</span>
-                    <span class="text-xs bg-zinc-100 text-zinc-600 px-2 py-1 rounded">International Business</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="project-card bg-blue-50 border border-blue-200 rounded-xl overflow-hidden shadow-md transition duration-300">
-                <div class="p-6">
-                  <h3 class="text-xl font-bold mb-2">CCSC: Rehabilitated Ex-Convict Reintegration Services</h3>
-                  <p class="text-gray-600 mb-4">Led the creation of a service platform that aids former convicts in re-entering the workforce and society through skill development and housing support.</p>
-                  <div class="flex flex-wrap gap-2">
-                    <span class="text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded">Social Impact</span>
-                    <span class="text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded">Service Design</span>
-                    <span class="text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded">Product Strategy</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="project-card bg-neutral-50 border border-neutral-200 rounded-xl overflow-hidden shadow-md transition duration-300">
-                <div class="p-6">
-                  <h3 class="text-xl font-bold mb-2">808Wave: DJ and Sound Engineer Scheduling</h3>
-                  <p class="text-gray-600 mb-4">Created a platform for DJs and sound engineers to manage studio time, track clients, and collaborate easily.</p>
-                  <div class="flex flex-wrap gap-2">
-                    <span class="text-xs bg-neutral-100 text-neutral-600 px-2 py-1 rounded">Creative Tech</span>
-                    <span class="text-xs bg-neutral-100 text-neutral-600 px-2 py-1 rounded">Platform Design</span>
-                    <span class="text-xs bg-neutral-100 text-neutral-600 px-2 py-1 rounded">User Experience</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="project-card bg-pink-100 border border-pink-300 rounded-xl overflow-hidden shadow-md transition duration-300">
-                <div class="p-6">
-                  <h3 class="text-xl font-bold mb-2">Delta: B2B2C Service Booking Analytics Tool</h3>
-                  <p class="text-gray-600 mb-4">Developed a traction and analytics dashboard for service marketplaces to monitor user engagement and growth metrics.</p>
-                  <div class="flex flex-wrap gap-2">
-                    <span class="text-xs bg-pink-200 text-pink-800 px-2 py-1 rounded">Analytics</span>
-                    <span class="text-xs bg-pink-200 text-pink-800 px-2 py-1 rounded">Growth Strategy</span>
-                    <span class="text-xs bg-pink-200 text-pink-800 px-2 py-1 rounded">Platform Development</span>
-                  </div>
-                </div>
-              </div>
-              
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Bilateral Amputee Gaming Controller</h3>
+            <p class="text-gray-600 mb-4">Engineered a custom PC controller for bilateral amputees to enhance gaming
+              accessibility and inclusivity.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">Rapid prototyping</span>
+              <span class="text-xs bg-orange-100 text-orange-800 px-2 py-1 rounded">Biomedical Engineering</span>
+              <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">Product Engineering</span>
+              <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">Innovation Development</span>
+              <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">Technology Trends</span>
+              <span class="text-xs bg-indigo-100 text-indigo-800 px-2 py-1 rounded">Product Development</span>
+            </div>
           </div>
-      </div>
-  </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="py-20 bg-gray-200">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-12">Professional Experience</h2>
-            
-            <div class="max-w-4xl mx-auto">
-                <!-- Timeline item -->
-                <div class="relative pl-16 mb-12 timeline-item">
-                  <div class="absolute left-0 top-0 w-8 h-8 rounded-full bg-indigo-600 flex items-center justify-center text-white">
-                      <i class="fas fa-briefcase"></i>
-                  </div>
-                  <div class="bg-white p-6 rounded-lg shadow-sm">
-                      <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
-                          <h3 class="text-xl font-bold">Chief Executive Officer</h3>
-                          <span class="text-indigo-600 font-medium">07/2017 - Present</span>
-                      </div>
-                      <h4 class="text-lg font-semibold text-gray-700 mb-3">Insight Optics Inc. | Seattle, WA</h4>
-                      <p class="text-gray-600 mb-4">
-                          Insight Optics empowers primary care providers through computer vision and machine learning to make preventing disease profitable.
-                      </p>
-                      <ul class="list-disc pl-5 text-gray-600 space-y-1">
-                          <li>Investor Relations: Raised $3MM+ from private equity, venture capital, angel syndicates, grants, and competitions</li>
-                          <li>Business Development: Acquired primary customers, conducted 1000+ customer discovery interviews, iterated/field tested new business models, drove business from pre- to post-revenue; managed 6-7 figure deal negotiations/contract</li>
-                          <li>Staff Management: Led research, development, sales, and marketing teams; sourced/hired 40+ interns/employees/founders</li>
-                          <li>R&D Coordination: Managed PaaS product development, developed product roadmaps, designed and implemented IP strategy</li>
-                      </ul>
-                  </div>
-              </div>
-                
-                <!-- Timeline item -->
-                <div class="relative pl-16 mb-12 timeline-item">
-                  <div class="absolute left-0 top-0 w-8 h-8 rounded-full bg-indigo-600 flex items-center justify-center text-white">
-                      <i class="fas fa-briefcase"></i>
-                  </div>
-                  <div class="bg-white p-6 rounded-lg shadow-sm">
-                      <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
-                          <h3 class="text-xl font-bold">CTO Founder</h3>
-                          <span class="text-indigo-600 font-medium">07/2014 - 12/2016</span>
-                      </div>
-                      <h4 class="text-lg font-semibold text-gray-700 mb-3">iNeurologics | Atlanta, GA</h4>
-                      <p class="text-gray-600 mb-4">
-                          iNeurologics adds quantitative measures to normally qualitative intracranial hypertension assessments via the Glasgow Coma Score.
-                      </p>
-                      <ul class="list-disc pl-5 text-gray-600 space-y-1">
-                          <li>Led the development and implementation of a novel non-invasive intracranial hypertension monitoring tool</li>
-                          <li>Directed device design, prototyping, and validation, ensuring compliance with regulatory standards</li>
-                          <li>Oversaw a successful M&A process through a microacquisition, aligning strategic goals with the acquiring organization, ensuring seamless technology transfer, and positioning the device for broader market adoption</li>
-                      </ul>
-                  </div>
-              </div>
-                
-                <!-- Timeline item -->
-                <div class="relative pl-16 mb-12 timeline-item">
-                  <div class="absolute left-0 top-0 w-8 h-8 rounded-full bg-indigo-600 flex items-center justify-center text-white">
-                      <i class="fas fa-briefcase"></i>
-                  </div>
-                  <div class="bg-white p-6 rounded-lg shadow-sm">
-                      <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
-                          <h3 class="text-xl font-bold">VP Product</h3>
-                          <span class="text-indigo-600 font-medium">07/2013 - 12/2014</span>
-                      </div>
-                      <h4 class="text-lg font-semibold text-gray-700 mb-3">HemoGlobe | Baltimore, MD</h4>
-                      <p class="text-gray-600 mb-4">
-                          Hemoglobe/InteleHealth utilizes advanced communication and processing techniques to non-invasively monitor maternal anemia in LMICs.
-                      </p>
-                      <ul class="list-disc pl-5 text-gray-600 space-y-1">
-                          <li>Led the development and implementation of a novel non-invasive hemoglobinometry data aggregating tool</li>
-                          <li>Designed the analog front end data collection system, and signal processing structure</li>
-                          <li>Managed and conducted field testing in over 10 LMI countries in coordination with global partners</li>
-                      </ul>
-                  </div>
-              </div>
-              <div class="relative pl-16 mb-12 timeline-item">
-                <div class="absolute left-0 top-0 w-8 h-8 rounded-full bg-indigo-600 flex items-center justify-center text-white">
-                    <i class="fas fa-briefcase"></i>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-sm">
-                    <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
-                        <h3 class="text-xl font-bold">Program Manager, Business Advisor</h3>
-                        <span class="text-indigo-600 font-medium">06/2023 - Present</span>
-                    </div>
-                    <h4 class="text-lg font-semibold text-gray-700 mb-3">NIH eC3i Lab2Mkt | Seattle, WA</h4>
-                    <p class="text-gray-600 mb-4">
-                        The C3i Program is an in-depth, entrepreneurial training experience designed to help biomedical innovators validate a market need and viable business opportunity, as well as develop a compelling pitch for prospective investors and partners.
-                    </p>
-                    <ul class="list-disc pl-5 text-gray-600 space-y-1">
-                        <li>Management: Organized HealthTech and Medical Devices teams for product launch, programming, product design, and system integration</li>
-                        <li>Program Management: Built roadmaps, consulted management teams, and established performance monitoring and reporting systems</li>
-                        <li>Directorship: Built data rooms for investment, advised CEOs/Founders and worked with board members to define OKRs</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="relative pl-16 mb-12 timeline-item">
-              <div class="absolute left-0 top-0 w-8 h-8 rounded-full bg-indigo-600 flex items-center justify-center text-white">
-                  <i class="fas fa-briefcase"></i>
-              </div>
-              <div class="bg-white p-6 rounded-lg shadow-sm">
-                  <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
-                      <h3 class="text-xl font-bold">Affiliate Faculty, Instructor</h3>
-                      <span class="text-indigo-600 font-medium">08/2014 - Present</span>
-                  </div>
-                  <h4 class="text-lg font-semibold text-gray-700 mb-3">University of Washington, Georgia Institute of Technology | Seattle, WA</h4>
-                  <p class="text-gray-600 mb-4">
-                      Faculty in Mechanical and Electrical Engineering Respectively.
-                  </p>
-                  <ul class="list-disc pl-5 text-gray-600 space-y-1">
-                      <li>Management: Led multiple international research teams, 14+ students per semester, producing publications and patents</li>
-                      <li>Instruction: Graded exams, provided lectures, and worked in lab with 500+ students; generated course material including quizzes, worksheets, and lectures; designed, engineered, and constructed laboratory curriculum and demonstrations</li>
-                      <li>Research: Developed protocols and conducted analysis for governmental/grant funded work; $1M+ funding, 2 patents, 3 papers</li>
-                  </ul>
-              </div>
-          </div>
-          <div class="relative pl-16 mb-12 timeline-item">
-            <div class="absolute left-0 top-0 w-8 h-8 rounded-full bg-indigo-600 flex items-center justify-center text-white">
-                <i class="fas fa-briefcase"></i>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-sm">
-                <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
-                    <h3 class="text-xl font-bold">Executive Consultant</h3>
-                    <span class="text-indigo-600 font-medium">10/2018 - Present</span>
-                </div>
-                <h4 class="text-lg font-semibold text-gray-700 mb-3">Varied | Seattle, WA</h4>
-                <p class="text-gray-600 mb-4">
-                    Providing high-level consulting to C-suite executives and leadership teams across various industries.
-                </p>
-                <ul class="list-disc pl-5 text-gray-600 space-y-1">
-                    <li>Management: Organized teams of 20+ people for programming, electrical board design, and system integration</li>
-                    <li>Project Management: Built roadmaps, consulted management teams, and rapidly prototyped testable solutions and software</li>
-                    <li>Directorship: Built data rooms for investment, advised C-suite and worked with board members to define goals and initiatives, assemble analyst reports, and deploy operational procedures</li>
-                </ul>
-            </div>
         </div>
+
+        <div
+          class="project-card bg-white border border-gray-200 rounded-xl overflow-hidden shadow-md transition duration-300">
+          <div class="h-48 bg-green-100 flex items-center justify-center">
+            <i class="fas fa-heartbeat text-6xl text-green-400"></i>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Heal Ulcer Detection and Prevention Unit</h3>
+            <p class="text-gray-600 mb-4">Designed a diagnostic device to detect early signs of pressure ulcers and help
+              prevent long-term complications.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">Medical Device Lifecycle</span>
+              <span class="text-xs bg-orange-100 text-orange-800 px-2 py-1 rounded">Biomedical Engineering</span>
+              <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">Research Management</span>
+              <span class="text-xs bg-indigo-100 text-indigo-800 px-2 py-1 rounded">User Research</span>
+              <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">Product Engineering</span>
+              <span class="text-xs bg-indigo-100 text-indigo-800 px-2 py-1 rounded">Product Development</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="project-card bg-white border border-gray-200 rounded-xl overflow-hidden shadow-md transition duration-300">
+          <div class="h-48 bg-red-100 flex items-center justify-center">
+            <i class="fas fa-lungs text-6xl text-red-400"></i>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Low Cost Oxygen Concentration Analyzer</h3>
+            <p class="text-gray-600 mb-4">Developed a cost-effective oxygen analyzer tailored for resource-limited
+              clinical settings.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">Product Engineering</span>
+              <span class="text-xs bg-indigo-100 text-indigo-800 px-2 py-1 rounded">Product Strategy</span>
+              <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">Rapid prototyping</span>
+              <span class="text-xs bg-orange-100 text-orange-800 px-2 py-1 rounded">Biomedical Engineering</span>
+              <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">Market Analysis</span>
+              <span class="text-sm bg-purple-100 text-purple-800 px-2 py-1 rounded">Executive Leadership</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="project-card bg-white border border-gray-200 rounded-xl overflow-hidden shadow-md transition duration-300">
+          <div class="h-48 bg-yellow-100 flex items-center justify-center">
+            <i class="fas fa-brain text-6xl text-yellow-400"></i>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Simulated Muscle Memory Architecture</h3>
+            <p class="text-gray-600 mb-4">Built an feedback-driven architecture simulating muscle memory patterns for
+              myoelectric prosthetic control.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Data Science</span>
+              <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">Innovation Development</span>
+              <span class="text-xs bg-orange-100 text-orange-800 px-2 py-1 rounded">Biomedical Engineering</span>
+              <span class="text-xs bg-indigo-100 text-indigo-800 px-2 py-1 rounded">Product Development</span>
+              <span class="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded">Cross-functional Leadership</span>
+              <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Software Architecture</span>
+              <span class="text-xs bg-indigo-100 text-indigo-800 px-2 py-1 rounded">Product Lifecycle Management</span>
+              <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">Market Analysis</span>
+
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="project-card bg-white border border-gray-200 rounded-xl overflow-hidden shadow-md transition duration-300">
+          <div class="h-48 bg-purple-100 flex items-center justify-center">
+            <i class="fas fa-vial text-6xl text-purple-400"></i>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Non-invasive Hemoglobinometer</h3>
+            <p class="text-gray-600 mb-4">Created a low-cost, non-invasive hemoglobin measurement tool for use in
+              underserved regions.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">Medical Device Lifecycle</span>
+              <span class="text-xs bg-indigo-100 text-indigo-800 px-2 py-1 rounded">Product Strategy</span>
+              <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">Product-Market Fit</span>
+              <span class="text-xs bg-indigo-100 text-indigo-800 px-2 py-1 rounded">Product Lifecycle Management</span>
+              <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">Innovation Development</span>
+              <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Technology Strategy</span>
+              <span class="text-xs bg-orange-100 text-orange-800 px-2 py-1 rounded">International Team Management</span>
+              <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Data Analytics</span>
+
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="project-card bg-white border border-gray-200 rounded-xl overflow-hidden shadow-md transition duration-300">
+          <div class="h-48 bg-pink-100 flex items-center justify-center">
+            <i class="fas fa-eye text-6xl text-pink-400"></i>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Smartphone Diabetic Retinopathy Screening Tool</h3>
+            <p class="text-gray-600 mb-4">Developed a smartphone-based AI/ML tool to assist diabetic retinopathy
+              screening in low-resource areas.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs bg-indigo-100 text-indigo-800 px-2 py-1 rounded">Product Strategy</span>
+              <span class="text-xs bg-indigo-100 text-indigo-800 px-2 py-1 rounded">Roadmapping</span>
+              <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">AI/ML</span>
+              <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Computer Vision</span>
+              <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Cloud Computing</span>
+              <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">Business Model Innovation</span>
+              <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">Venture Capital</span>
+              <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">Business Development</span>
+              <span class="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded">Culture Alignment</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="project-card bg-white border border-gray-200 rounded-xl overflow-hidden shadow-md transition duration-300">
+          <div class="h-48 bg-indigo-100 flex items-center justify-center">
+            <i class="fas fa-dna text-6xl text-indigo-400"></i>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Perfusion Bioreactor to Improve Regenerative Medicine</h3>
+            <p class="text-gray-600 mb-4">Designed a bioreactor system to enhance uniformity and depth of cell seeding
+              in tissue engineering.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs bg-orange-100 text-orange-800 px-2 py-1 rounded">Cell and Tissue Engineering</span>
+              <span class="text-xs bg-orange-100 text-orange-800 px-2 py-1 rounded">Biotechnology</span>
+              <span class="text-xs bg-orange-100 text-orange-800 px-2 py-1 rounded">Experimental Design</span>
+              <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">Scientific Publication</span>
+              <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">Research Management</span>
+              <span class="text-xs bg-orange-100 text-orange-800 px-2 py-1 rounded">Mathematical Modeling</span>
+              <span class="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded">Team Building</span>
+              <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">Business Development</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="project-card bg-white border border-gray-200 rounded-xl overflow-hidden shadow-md transition duration-300">
+          <div class="h-48 bg-teal-100 flex items-center justify-center">
+            <i class="fas fa-microscope text-6xl text-teal-400"></i>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Smartphone Histopathology Whole Slide Imaging QA Tool</h3>
+            <p class="text-gray-600 mb-4">Created a computer vision tool for low-cost, smartphone-enabled histopathology
+              analysis in LMICs.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs bg-indigo-100 text-indigo-800 px-2 py-1 rounded">Go-to-Market</span>
+              <span class="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded">Stakeholder management</span>
+              <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Computer Vision</span>
+              <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">AI/ML</span>
+              <span class="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded">Strategic Planning</span>
+              <span class="text-xs bg-orange-100 text-orange-800 px-2 py-1 rounded">Product Lifecycle Management</span>
+              <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">Negotiation</span>
+              <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">Innovation Development</span>
+              <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">Market Analysis</span>
+
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="project-card bg-white border border-gray-200 rounded-xl overflow-hidden shadow-md transition duration-300">
+          <div class="h-48 bg-gray-100 flex items-center justify-center">
+            <i class="fas fa-user-md text-6xl text-gray-400"></i>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Non-invasive Intracranial Pressure Monitor</h3>
+            <p class="text-gray-600 mb-4">Developed a monitoring tool for detecting intracranial hypertension without
+              the need for surgical procedures.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">Medical Device Lifecycle</span>
+              <span class="text-xs bg-red-100 text-red-800 px-2 py-1 rounded">Care Managemnt</span>
+              <span class="text-xs bg-orange-100 text-orange-800 px-2 py-1 rounded">Biomedical Engineering</span>
+              <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">Research Management</span>
+              <span class="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded">Executive Leadership</span>
+              <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">Budgeting & Forecasting</span>
+              <span class="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded">Culture Creation</span>
+              <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">Business Model Innovation</span>
+            </div>
+          </div>
+        </div>
+
+
+
+
+      </div>
+    </div>
+  </section>
+  <!-- Advised Projects Section -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">Advised Projects</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <!-- Project Card -->
+        <div
+          class="project-card bg-red-100 border border-red-300 rounded-xl overflow-hidden shadow-md transition duration-300">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">SomerAI: Rebar Tying Robot</h3>
+            <p class="text-gray-600 mb-4">Engineered an autonomous robotic system for efficient and precise rebar tying
+              in construction environments.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs bg-red-200 text-red-800 px-2 py-1 rounded">Product Engineering</span>
+              <span class="text-xs bg-red-200 text-red-800 px-2 py-1 rounded">Automation</span>
+              <span class="text-xs bg-red-200 text-red-800 px-2 py-1 rounded">Innovation Development</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="project-card bg-blue-100 border border-blue-300 rounded-xl overflow-hidden shadow-md transition duration-300">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Heat Transfer Modeling of Satellite Electrical Systems</h3>
+            <p class="text-gray-600 mb-4">Developed simulation models to analyze and optimize thermal management in
+              satellite electrical subsystems.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs bg-blue-200 text-blue-800 px-2 py-1 rounded">Mathematical Modeling</span>
+              <span class="text-xs bg-blue-200 text-blue-800 px-2 py-1 rounded">Experimental Design</span>
+              <span class="text-xs bg-blue-200 text-blue-800 px-2 py-1 rounded">Software Architecture</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="project-card bg-green-100 border border-green-300 rounded-xl overflow-hidden shadow-md transition duration-300">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Applied Hope Foundation: Remote Parachute Deployment</h3>
+            <p class="text-gray-600 mb-4">Designed a parachute deployment and navigation system for delivering emergency
+              aid to remote locations.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs bg-green-200 text-green-800 px-2 py-1 rounded">Rapid Prototyping</span>
+              <span class="text-xs bg-green-200 text-green-800 px-2 py-1 rounded">Product Development</span>
+              <span class="text-xs bg-green-200 text-green-800 px-2 py-1 rounded">Innovation Development</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="project-card bg-purple-100 border border-purple-300 rounded-xl overflow-hidden shadow-md transition duration-300">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Farnes Institute: Muscle Strength Testing Cage</h3>
+            <p class="text-gray-600 mb-4">Built a physical therapy strength measurement device for consistent tracking
+              of patient muscle recovery metrics.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs bg-purple-200 text-purple-800 px-2 py-1 rounded">Biomedical Engineering</span>
+              <span class="text-xs bg-purple-200 text-purple-800 px-2 py-1 rounded">Medical Device Lifecycle</span>
+              <span class="text-xs bg-purple-200 text-purple-800 px-2 py-1 rounded">Product Engineering</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="project-card bg-pink-100 border border-pink-300 rounded-xl overflow-hidden shadow-md transition duration-300">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">edispatched: UAV-Based Pilot Training</h3>
+            <p class="text-gray-600 mb-4">Developed a training platform using drones to provide hands-on experience for
+              aspiring UAV pilots.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs bg-pink-200 text-pink-800 px-2 py-1 rounded">Product Development</span>
+              <span class="text-xs bg-pink-200 text-pink-800 px-2 py-1 rounded">User Research</span>
+              <span class="text-xs bg-pink-200 text-pink-800 px-2 py-1 rounded">Technology Strategy</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="project-card bg-indigo-100 border border-indigo-300 rounded-xl overflow-hidden shadow-md transition duration-300">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">AstroTools: Lunar Navigation Beacon</h3>
+            <p class="text-gray-600 mb-4">Designed a low-power lunar beacon system to aid robotic and human navigation
+              during space exploration missions.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs bg-indigo-200 text-indigo-800 px-2 py-1 rounded">Technology Strategy</span>
+              <span class="text-xs bg-indigo-200 text-indigo-800 px-2 py-1 rounded">Innovation Development</span>
+              <span class="text-xs bg-indigo-200 text-indigo-800 px-2 py-1 rounded">Micro-Electromechanical
+                Systems</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="project-card bg-orange-100 border border-orange-300 rounded-xl overflow-hidden shadow-md transition duration-300">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">CityLabs: Nuclear Battery for Heart Pacing</h3>
+            <p class="text-gray-600 mb-4">Developed a compact nuclear battery prototype for powering long-term
+              implantable cardiac devices.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs bg-orange-200 text-orange-800 px-2 py-1 rounded">Biotechnology</span>
+              <span class="text-xs bg-orange-200 text-orange-800 px-2 py-1 rounded">Biomedical Engineering</span>
+              <span class="text-xs bg-orange-200 text-orange-800 px-2 py-1 rounded">Innovation Development</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="project-card bg-teal-100 border border-teal-300 rounded-xl overflow-hidden shadow-md transition duration-300">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">XanderMed: Interlock Screw Medical Implant</h3>
+            <p class="text-gray-600 mb-4">Designed a mechanically interlocking implant system to improve stability and
+              integration in orthopedic surgeries.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs bg-teal-200 text-teal-800 px-2 py-1 rounded">Medical Device Lifecycle</span>
+              <span class="text-xs bg-teal-200 text-teal-800 px-2 py-1 rounded">Product Engineering</span>
+              <span class="text-xs bg-teal-200 text-teal-800 px-2 py-1 rounded">Biomedical Engineering</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="project-card bg-lime-100 border border-lime-300 rounded-xl overflow-hidden shadow-md transition duration-300">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">ColoTech: Precision in Colorectal Cancer Detection</h3>
+            <p class="text-gray-600 mb-4">Led the development of advanced diagnostic tools to improve early detection
+              and precision in colorectal cancer screening.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs bg-lime-200 text-lime-800 px-2 py-1 rounded">AI/ML</span>
+              <span class="text-xs bg-lime-200 text-lime-800 px-2 py-1 rounded">Computer Vision</span>
+              <span class="text-xs bg-lime-200 text-lime-800 px-2 py-1 rounded">Medical Device Lifecycle</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="project-card bg-gray-100 border border-gray-300 rounded-xl overflow-hidden shadow-md transition duration-300">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">OCTAVE: Optical Coherence Vibrometry Endoscope</h3>
+            <p class="text-gray-600 mb-4">Engineered a novel OCT endoscope for real-time imaging and vibrational
+              analysis in minimally invasive procedures.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs bg-gray-200 text-gray-800 px-2 py-1 rounded">Biomedical Engineering</span>
+              <span class="text-xs bg-gray-200 text-gray-800 px-2 py-1 rounded">Cell and Tissue Engineering</span>
+              <span class="text-xs bg-gray-200 text-gray-800 px-2 py-1 rounded">Product Engineering</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="project-card bg-yellow-100 border border-yellow-300 rounded-xl overflow-hidden shadow-md transition duration-300">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">ComfortScans: Breast MRI Biopsy Immobilization Device</h3>
+            <p class="text-gray-600 mb-4">Designed a patient-centric immobilization platform for improved MRI-guided
+              breast biopsy procedures.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs bg-yellow-200 text-yellow-800 px-2 py-1 rounded">Biomedical Engineering</span>
+              <span class="text-xs bg-yellow-200 text-yellow-800 px-2 py-1 rounded">Rapid Prototyping</span>
+              <span class="text-xs bg-yellow-200 text-yellow-800 px-2 py-1 rounded">Product Strategy</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="project-card bg-cyan-100 border border-cyan-300 rounded-xl overflow-hidden shadow-md transition duration-300">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Lilypad Health: Multiparametric Health Pad</h3>
+            <p class="text-gray-600 mb-4">Created a menstrual pad platform capable of detecting HR-HPV, fertility
+              hormones, and thyroid levels for proactive reproductive health monitoring.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs bg-cyan-200 text-cyan-800 px-2 py-1 rounded">Biotechnology</span>
+              <span class="text-xs bg-cyan-200 text-cyan-800 px-2 py-1 rounded">Innovation Development</span>
+              <span class="text-xs bg-cyan-200 text-cyan-800 px-2 py-1 rounded">Medical Device Lifecycle</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="project-card bg-sky-50 border border-sky-200 rounded-xl overflow-hidden shadow-md transition duration-300">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">OpenMindXR: AR/VR Training for Neurodiverse Children</h3>
+            <p class="text-gray-600 mb-4">Built immersive training environments in AR/VR tailored to enhance learning
+              for neurodiverse children.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs bg-sky-100 text-sky-600 px-2 py-1 rounded">XR Development</span>
+              <span class="text-xs bg-sky-100 text-sky-600 px-2 py-1 rounded">User Research</span>
+              <span class="text-xs bg-sky-100 text-sky-600 px-2 py-1 rounded">Education Technology</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="project-card bg-fuchsia-50 border border-fuchsia-200 rounded-xl overflow-hidden shadow-md transition duration-300">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">VA: Point of Care Ultrasound Remote Training System</h3>
+            <p class="text-gray-600 mb-4">Developed a remote ultrasound training platform for physicians in rural and
+              underserved communities.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs bg-fuchsia-100 text-fuchsia-600 px-2 py-1 rounded">Remote Learning</span>
+              <span class="text-xs bg-fuchsia-100 text-fuchsia-600 px-2 py-1 rounded">Medical Training</span>
+              <span class="text-xs bg-fuchsia-100 text-fuchsia-600 px-2 py-1 rounded">Biomedical Engineering</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="project-card bg-rose-50 border border-rose-200 rounded-xl overflow-hidden shadow-md transition duration-300">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">HuxleyMed: Sleep Apnea Diagnostic Monitoring Equipment</h3>
+            <p class="text-gray-600 mb-4">Designed a compact, wearable system to monitor and diagnose sleep apnea at
+              home with clinical-grade accuracy.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs bg-rose-100 text-rose-600 px-2 py-1 rounded">Product Engineering</span>
+              <span class="text-xs bg-rose-100 text-rose-600 px-2 py-1 rounded">Biomedical Engineering</span>
+              <span class="text-xs bg-rose-100 text-rose-600 px-2 py-1 rounded">Data Analytics</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="project-card bg-emerald-50 border border-emerald-200 rounded-xl overflow-hidden shadow-md transition duration-300">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">iCheck: Blood Sugar Monitoring Contact Lens</h3>
+            <p class="text-gray-600 mb-4">Invented a contact lens capable of non-invasive monitoring of diabetic blood
+              sugar levels in real-time.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs bg-emerald-100 text-emerald-600 px-2 py-1 rounded">Biotechnology</span>
+              <span class="text-xs bg-emerald-100 text-emerald-600 px-2 py-1 rounded">Wearable Devices</span>
+              <span class="text-xs bg-emerald-100 text-emerald-600 px-2 py-1 rounded">Innovation Development</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="project-card bg-violet-50 border border-violet-200 rounded-xl overflow-hidden shadow-md transition duration-300">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Plutonic Inc.: Anonymous Teletherapy Platform</h3>
+            <p class="text-gray-600 mb-4">Built a privacy-first teletherapy solution enabling patients to connect with
+              therapists without identity disclosure.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs bg-violet-100 text-violet-600 px-2 py-1 rounded">Mental Health Tech</span>
+              <span class="text-xs bg-violet-100 text-violet-600 px-2 py-1 rounded">Privacy Engineering</span>
+              <span class="text-xs bg-violet-100 text-violet-600 px-2 py-1 rounded">Product Strategy</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="project-card bg-zinc-50 border border-zinc-200 rounded-xl overflow-hidden shadow-md transition duration-300">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">DePaul's International: Global Sourcing and Shipping</h3>
+            <p class="text-gray-600 mb-4">Streamlined international sourcing workflows and built systems to improve
+              shipping timelines and compliance.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs bg-zinc-100 text-zinc-600 px-2 py-1 rounded">Supply Chain Management</span>
+              <span class="text-xs bg-zinc-100 text-zinc-600 px-2 py-1 rounded">Logistics Optimization</span>
+              <span class="text-xs bg-zinc-100 text-zinc-600 px-2 py-1 rounded">International Business</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="project-card bg-blue-50 border border-blue-200 rounded-xl overflow-hidden shadow-md transition duration-300">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">CCSC: Rehabilitated Ex-Convict Reintegration Services</h3>
+            <p class="text-gray-600 mb-4">Led the creation of a service platform that aids former convicts in
+              re-entering the workforce and society through skill development and housing support.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded">Social Impact</span>
+              <span class="text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded">Service Design</span>
+              <span class="text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded">Product Strategy</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="project-card bg-neutral-50 border border-neutral-200 rounded-xl overflow-hidden shadow-md transition duration-300">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">808Wave: DJ and Sound Engineer Scheduling</h3>
+            <p class="text-gray-600 mb-4">Created a platform for DJs and sound engineers to manage studio time, track
+              clients, and collaborate easily.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs bg-neutral-100 text-neutral-600 px-2 py-1 rounded">Creative Tech</span>
+              <span class="text-xs bg-neutral-100 text-neutral-600 px-2 py-1 rounded">Platform Design</span>
+              <span class="text-xs bg-neutral-100 text-neutral-600 px-2 py-1 rounded">User Experience</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="project-card bg-pink-100 border border-pink-300 rounded-xl overflow-hidden shadow-md transition duration-300">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Delta: B2B2C Service Booking Analytics Tool</h3>
+            <p class="text-gray-600 mb-4">Developed a traction and analytics dashboard for service marketplaces to
+              monitor user engagement and growth metrics.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs bg-pink-200 text-pink-800 px-2 py-1 rounded">Analytics</span>
+              <span class="text-xs bg-pink-200 text-pink-800 px-2 py-1 rounded">Growth Strategy</span>
+              <span class="text-xs bg-pink-200 text-pink-800 px-2 py-1 rounded">Platform Development</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="py-20 bg-gray-200">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">Professional Experience</h2>
+
+      <div class="max-w-4xl mx-auto">
+        <!-- Timeline item -->
         <div class="relative pl-16 mb-12 timeline-item">
-          <div class="absolute left-0 top-0 w-8 h-8 rounded-full bg-indigo-600 flex items-center justify-center text-white">
-              <i class="fas fa-briefcase"></i>
+          <div
+            class="absolute left-0 top-0 w-8 h-8 rounded-full bg-indigo-600 flex items-center justify-center text-white">
+            <i class="fas fa-briefcase"></i>
           </div>
           <div class="bg-white p-6 rounded-lg shadow-sm">
-              <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
-                  <h3 class="text-xl font-bold">Product Manager</h3>
-                  <span class="text-indigo-600 font-medium">10/2011 - 06/2013</span>
-              </div>
-              <h4 class="text-lg font-semibold text-gray-700 mb-3">Infinite Biomedical Technologies | Baltimore, MD</h4>
-              <p class="text-gray-600 mb-4">
-                  Product management and engineering for RFID enabled myoelectric prostheses
-              </p>
-              <ul class="list-disc pl-5 text-gray-600 space-y-1">
-                  <li>Engineering: Electrical board design and manufacturing, software integration, and system validation</li>
-                  <li>Project Management: Managed product lifecycle from concept to pilot deployment, aligning biomedical engineering, firmware development, and clinical validation to deliver a scalable and regulatory-compliant solution.</li>
-                  <li>User Experience: Implemented user-centered design through iterative prototyping and stakeholder engagement, resulting in seamless integration of WISP RFID modules for intuitive user-device interaction.</li>
-              </ul>
+            <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+              <h3 class="text-xl font-bold">Chief Executive Officer</h3>
+              <span class="text-indigo-600 font-medium">07/2017 - Present</span>
+            </div>
+            <h4 class="text-lg font-semibold text-gray-700 mb-3">Insight Optics Inc. | Seattle, WA</h4>
+            <p class="text-gray-600 mb-4">
+              Insight Optics empowers primary care providers through computer vision and machine learning to make
+              preventing disease profitable.
+            </p>
+            <ul class="list-disc pl-5 text-gray-600 space-y-1">
+              <li>Investor Relations: Raised $3MM+ from private equity, venture capital, angel syndicates, grants, and
+                competitions</li>
+              <li>Business Development: Acquired primary customers, conducted 1000+ customer discovery interviews,
+                iterated/field tested new business models, drove business from pre- to post-revenue; managed 6-7 figure
+                deal negotiations/contract</li>
+              <li>Staff Management: Led research, development, sales, and marketing teams; sourced/hired 40+
+                interns/employees/founders</li>
+              <li>R&D Coordination: Managed PaaS product development, developed product roadmaps, designed and
+                implemented IP strategy</li>
+            </ul>
           </div>
+        </div>
+
+        <!-- Timeline item -->
+        <div class="relative pl-16 mb-12 timeline-item">
+          <div
+            class="absolute left-0 top-0 w-8 h-8 rounded-full bg-indigo-600 flex items-center justify-center text-white">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+              <h3 class="text-xl font-bold">CTO Founder</h3>
+              <span class="text-indigo-600 font-medium">07/2014 - 12/2016</span>
+            </div>
+            <h4 class="text-lg font-semibold text-gray-700 mb-3">iNeurologics | Atlanta, GA</h4>
+            <p class="text-gray-600 mb-4">
+              iNeurologics adds quantitative measures to normally qualitative intracranial hypertension assessments via
+              the Glasgow Coma Score.
+            </p>
+            <ul class="list-disc pl-5 text-gray-600 space-y-1">
+              <li>Led the development and implementation of a novel non-invasive intracranial hypertension monitoring
+                tool</li>
+              <li>Directed device design, prototyping, and validation, ensuring compliance with regulatory standards
+              </li>
+              <li>Oversaw a successful M&A process through a microacquisition, aligning strategic goals with the
+                acquiring organization, ensuring seamless technology transfer, and positioning the device for broader
+                market adoption</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Timeline item -->
+        <div class="relative pl-16 mb-12 timeline-item">
+          <div
+            class="absolute left-0 top-0 w-8 h-8 rounded-full bg-indigo-600 flex items-center justify-center text-white">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+              <h3 class="text-xl font-bold">VP Product</h3>
+              <span class="text-indigo-600 font-medium">07/2013 - 12/2014</span>
+            </div>
+            <h4 class="text-lg font-semibold text-gray-700 mb-3">HemoGlobe | Baltimore, MD</h4>
+            <p class="text-gray-600 mb-4">
+              Hemoglobe/InteleHealth utilizes advanced communication and processing techniques to non-invasively monitor
+              maternal anemia in LMICs.
+            </p>
+            <ul class="list-disc pl-5 text-gray-600 space-y-1">
+              <li>Led the development and implementation of a novel non-invasive hemoglobinometry data aggregating tool
+              </li>
+              <li>Designed the analog front end data collection system, and signal processing structure</li>
+              <li>Managed and conducted field testing in over 10 LMI countries in coordination with global partners</li>
+            </ul>
+          </div>
+        </div>
+        <div class="relative pl-16 mb-12 timeline-item">
+          <div
+            class="absolute left-0 top-0 w-8 h-8 rounded-full bg-indigo-600 flex items-center justify-center text-white">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+              <h3 class="text-xl font-bold">Program Manager, Business Advisor</h3>
+              <span class="text-indigo-600 font-medium">06/2023 - Present</span>
+            </div>
+            <h4 class="text-lg font-semibold text-gray-700 mb-3">NIH eC3i Lab2Mkt | Seattle, WA</h4>
+            <p class="text-gray-600 mb-4">
+              The C3i Program is an in-depth, entrepreneurial training experience designed to help biomedical innovators
+              validate a market need and viable business opportunity, as well as develop a compelling pitch for
+              prospective investors and partners.
+            </p>
+            <ul class="list-disc pl-5 text-gray-600 space-y-1">
+              <li>Management: Organized HealthTech and Medical Devices teams for product launch, programming, product
+                design, and system integration</li>
+              <li>Program Management: Built roadmaps, consulted management teams, and established performance monitoring
+                and reporting systems</li>
+              <li>Directorship: Built data rooms for investment, advised CEOs/Founders and worked with board members to
+                define OKRs</li>
+            </ul>
+          </div>
+        </div>
+        <div class="relative pl-16 mb-12 timeline-item">
+          <div
+            class="absolute left-0 top-0 w-8 h-8 rounded-full bg-indigo-600 flex items-center justify-center text-white">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+              <h3 class="text-xl font-bold">Affiliate Faculty, Instructor</h3>
+              <span class="text-indigo-600 font-medium">08/2014 - Present</span>
+            </div>
+            <h4 class="text-lg font-semibold text-gray-700 mb-3">University of Washington, Georgia Institute of
+              Technology | Seattle, WA</h4>
+            <p class="text-gray-600 mb-4">
+              Faculty in Mechanical and Electrical Engineering Respectively.
+            </p>
+            <ul class="list-disc pl-5 text-gray-600 space-y-1">
+              <li>Management: Led multiple international research teams, 14+ students per semester, producing
+                publications and patents</li>
+              <li>Instruction: Graded exams, provided lectures, and worked in lab with 500+ students; generated course
+                material including quizzes, worksheets, and lectures; designed, engineered, and constructed laboratory
+                curriculum and demonstrations</li>
+              <li>Research: Developed protocols and conducted analysis for governmental/grant funded work; $1M+ funding,
+                2 patents, 3 papers</li>
+            </ul>
+          </div>
+        </div>
+        <div class="relative pl-16 mb-12 timeline-item">
+          <div
+            class="absolute left-0 top-0 w-8 h-8 rounded-full bg-indigo-600 flex items-center justify-center text-white">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+              <h3 class="text-xl font-bold">Executive Consultant</h3>
+              <span class="text-indigo-600 font-medium">10/2018 - Present</span>
+            </div>
+            <h4 class="text-lg font-semibold text-gray-700 mb-3">Varied | Seattle, WA</h4>
+            <p class="text-gray-600 mb-4">
+              Providing high-level consulting to C-suite executives and leadership teams across various industries.
+            </p>
+            <ul class="list-disc pl-5 text-gray-600 space-y-1">
+              <li>Management: Organized teams of 20+ people for programming, electrical board design, and system
+                integration</li>
+              <li>Project Management: Built roadmaps, consulted management teams, and rapidly prototyped testable
+                solutions and software</li>
+              <li>Directorship: Built data rooms for investment, advised C-suite and worked with board members to define
+                goals and initiatives, assemble analyst reports, and deploy operational procedures</li>
+            </ul>
+          </div>
+        </div>
+        <div class="relative pl-16 mb-12 timeline-item">
+          <div
+            class="absolute left-0 top-0 w-8 h-8 rounded-full bg-indigo-600 flex items-center justify-center text-white">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+              <h3 class="text-xl font-bold">Product Manager</h3>
+              <span class="text-indigo-600 font-medium">10/2011 - 06/2013</span>
+            </div>
+            <h4 class="text-lg font-semibold text-gray-700 mb-3">Infinite Biomedical Technologies | Baltimore, MD</h4>
+            <p class="text-gray-600 mb-4">
+              Product management and engineering for RFID enabled myoelectric prostheses
+            </p>
+            <ul class="list-disc pl-5 text-gray-600 space-y-1">
+              <li>Engineering: Electrical board design and manufacturing, software integration, and system validation
+              </li>
+              <li>Project Management: Managed product lifecycle from concept to pilot deployment, aligning biomedical
+                engineering, firmware development, and clinical validation to deliver a scalable and
+                regulatory-compliant solution.</li>
+              <li>User Experience: Implemented user-centered design through iterative prototyping and stakeholder
+                engagement, resulting in seamless integration of WISP RFID modules for intuitive user-device
+                interaction.</li>
+            </ul>
+          </div>
+        </div>
+
       </div>
-            
-            </div>
-        </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Education Section -->
-    <section id="education" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-12">Education</h2>
-            
-            <div class="max-w-4xl mx-auto">
-              <div class="bg-gray-50 p-8 rounded-lg shadow-sm">
-                <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
-                    <div>
-                        <h3 class="text-xl font-bold">(Ph.D.) Doctoral Degree in BioEngineering</h3>
-                        <h4 class="text-lg text-gray-700">Georgia Institute of Technology</h4>
-                    </div>
-                    <span class="text-indigo-600 font-medium mt-2 md:mt-0">GPA: 3.76</span>
-                </div>
-                <p class="text-gray-600">
-                    Focus on regenerative medicine and applications in medical technologies.
-                </p>
-                <ul class="list-disc pl-5 text-gray-600 space-y-1">
-                  <li>Honors: NIH T32 Cell and Tissue Grant, Technological Innovation Generating Economic Results, Georgia Institute of Technology Presidential Fellow, Student Exchange KU Leuven Flanders Business School
-                  <li>Concentration: Clinically Translatable Research and Technology Commercialization
-                  <li>Leadership: BioEngineering Graduate Association President, Graduate Leadership Program Certification, BioIgnite
-              </ul>
-            </div>
-            
-            <div class="bg-gray-50 p-8 rounded-lg shadow-sm">
-                <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
-                    <div>
-                        <h3 class="text-xl font-bold">(MBA) Master’s Degree in Business Administration/Management</h3>
-                        <h4 class="text-lg text-gray-700">Georgia Institute of Technology</h4>
-                    </div>
-                    <span class="text-indigo-600 font-medium mt-2 md:mt-0">GPA: 3.83</span>
-                </div>
-                <p class="text-gray-600">
-                    Focus on Innovation Management with a specialization in technology commercialization and entrepreneurship.
-                </p>
-                <ul class="list-disc pl-5 text-gray-600 space-y-1">
-                  <li>Honors: Merit Based Fellowship in Scheller College of Business
-                  <li>Concentrations: Innovation and Technology Management
-                  <li>Immersive Track: Technology Commercialization and Leading New Ventures
-              </ul>
-            </div>
-            
-            <div class="bg-gray-50 p-8 rounded-lg shadow-sm">
-                <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
-                    <div>
-                        <h3 class="text-xl font-bold">(MBID) Master of Science in BioEngineering Innovation and Design</h3>
-                        <h4 class="text-lg text-gray-700">Johns Hopkins University</h4>
-                    </div>
-                    <span class="text-indigo-600 font-medium mt-2 md:mt-0">GPA: 3.82</span>
-                </div>
-                <p class="text-gray-600">
-                    Specialized in customer discovery and stakeholder incentive alignment for medical devices.
-                </p>
-                <ul class="list-disc pl-5 text-gray-600 space-y-1">
-                  <li>Concentration: Business of Bioengineering Innovation and Design, Global Health Design
-                  <li>Achievements: 2nd Place MGH-APF/CIMIT Primary Care Competition: $100k Grant, 2nd Place NAPEC Innovation Conference
-              </ul>
-            </div>
-            
-            <div class="bg-gray-50 p-8 rounded-lg shadow-sm">
-                <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
-                    <div>
-                        <h3 class="text-xl font-bold">(BS) Bachelor of Science in Biomedical Engineering</h3>
-                        <h4 class="text-lg text-gray-700">Johns Hopkins University</h4>
-                    </div>
-                    <span class="text-indigo-600 font-medium mt-2 md:mt-0">GPA: 3.38</span>
-                </div>
-                <p class="text-gray-600">
-                    Completed coursework in biophysics, bioinstrumentation, and biomechanics, with a strong foundation in engineering principles.
-                </p>
-                <ul class="list-disc pl-5 text-gray-600 space-y-1">
-                  <li>Concentration: Self designed concentration in Medical Robotics and Devices
-                </ul>
-            </div>
-            
-            <div class="bg-gray-50 p-8 rounded-lg shadow-sm">
-                <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
-                    <div>
-                        <h3 class="text-xl font-bold">(BS) Bachelor of Science in Applied Mathematics and Statistics</h3>
-                        <h4 class="text-lg text-gray-700">Johns Hopkins University</h4>
-                    </div>
-                    <span class="text-indigo-600 font-medium mt-2 md:mt-0">GPA: 3.8</span>
-                </div>
-                <p class="text-gray-600">
-                    Emphasized applied mathematics and statistical methods in engineering and scientific research.
-                </p>
-            </div>
-            
-            </div>
-        </div>
-    </section>
+  <!-- Education Section -->
+  <section id="education" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">Education</h2>
 
-<!-- Awards & Recognition Section -->
-<section id="awards" class="py-20 bg-gray-50">
+      <div class="max-w-4xl mx-auto">
+        <div class="bg-gray-50 p-8 rounded-lg shadow-sm">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
+            <div>
+              <h3 class="text-xl font-bold">(Ph.D.) Doctoral Degree in BioEngineering</h3>
+              <h4 class="text-lg text-gray-700">Georgia Institute of Technology</h4>
+            </div>
+            <span class="text-indigo-600 font-medium mt-2 md:mt-0">GPA: 3.76</span>
+          </div>
+          <p class="text-gray-600">
+            Focus on regenerative medicine and applications in medical technologies.
+          </p>
+          <ul class="list-disc pl-5 text-gray-600 space-y-1">
+            <li>Honors: NIH T32 Cell and Tissue Grant, Technological Innovation Generating Economic Results, Georgia
+              Institute of Technology Presidential Fellow, Student Exchange KU Leuven Flanders Business School
+            <li>Concentration: Clinically Translatable Research and Technology Commercialization
+            <li>Leadership: BioEngineering Graduate Association President, Graduate Leadership Program Certification,
+              BioIgnite
+          </ul>
+        </div>
+
+        <div class="bg-gray-50 p-8 rounded-lg shadow-sm">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
+            <div>
+              <h3 class="text-xl font-bold">(MBA) Master’s Degree in Business Administration/Management</h3>
+              <h4 class="text-lg text-gray-700">Georgia Institute of Technology</h4>
+            </div>
+            <span class="text-indigo-600 font-medium mt-2 md:mt-0">GPA: 3.83</span>
+          </div>
+          <p class="text-gray-600">
+            Focus on Innovation Management with a specialization in technology commercialization and entrepreneurship.
+          </p>
+          <ul class="list-disc pl-5 text-gray-600 space-y-1">
+            <li>Honors: Merit Based Fellowship in Scheller College of Business
+            <li>Concentrations: Innovation and Technology Management
+            <li>Immersive Track: Technology Commercialization and Leading New Ventures
+          </ul>
+        </div>
+
+        <div class="bg-gray-50 p-8 rounded-lg shadow-sm">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
+            <div>
+              <h3 class="text-xl font-bold">(MBID) Master of Science in BioEngineering Innovation and Design</h3>
+              <h4 class="text-lg text-gray-700">Johns Hopkins University</h4>
+            </div>
+            <span class="text-indigo-600 font-medium mt-2 md:mt-0">GPA: 3.82</span>
+          </div>
+          <p class="text-gray-600">
+            Specialized in customer discovery and stakeholder incentive alignment for medical devices.
+          </p>
+          <ul class="list-disc pl-5 text-gray-600 space-y-1">
+            <li>Concentration: Business of Bioengineering Innovation and Design, Global Health Design
+            <li>Achievements: 2nd Place MGH-APF/CIMIT Primary Care Competition: $100k Grant, 2nd Place NAPEC Innovation
+              Conference
+          </ul>
+        </div>
+
+        <div class="bg-gray-50 p-8 rounded-lg shadow-sm">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
+            <div>
+              <h3 class="text-xl font-bold">(BS) Bachelor of Science in Biomedical Engineering</h3>
+              <h4 class="text-lg text-gray-700">Johns Hopkins University</h4>
+            </div>
+            <span class="text-indigo-600 font-medium mt-2 md:mt-0">GPA: 3.38</span>
+          </div>
+          <p class="text-gray-600">
+            Completed coursework in biophysics, bioinstrumentation, and biomechanics, with a strong foundation in
+            engineering principles.
+          </p>
+          <ul class="list-disc pl-5 text-gray-600 space-y-1">
+            <li>Concentration: Self designed concentration in Medical Robotics and Devices
+          </ul>
+        </div>
+
+        <div class="bg-gray-50 p-8 rounded-lg shadow-sm">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
+            <div>
+              <h3 class="text-xl font-bold">(BS) Bachelor of Science in Applied Mathematics and Statistics</h3>
+              <h4 class="text-lg text-gray-700">Johns Hopkins University</h4>
+            </div>
+            <span class="text-indigo-600 font-medium mt-2 md:mt-0">GPA: 3.8</span>
+          </div>
+          <p class="text-gray-600">
+            Emphasized applied mathematics and statistical methods in engineering and scientific research.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Awards & Recognition Section -->
+  <section id="awards" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">Awards & Recognition</h2>
+
+      <!-- Filter Buttons -->
+      <div class="flex flex-wrap justify-center gap-3 mb-10">
+        <button class="award-filter px-4 py-2 bg-purple-100 text-purple-800 rounded-full text-sm font-medium"
+          data-category="all">All</button>
+        <button class="award-filter px-4 py-2 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium"
+          data-category="leadership">Leadership</button>
+        <button class="award-filter px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-medium"
+          data-category="pitch">Pitch</button>
+        <button class="award-filter px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium"
+          data-category="innovation">Innovation</button>
+        <button class="award-filter px-4 py-2 bg-red-100 text-red-800 rounded-full text-sm font-medium"
+          data-category="academic">Academic</button>
+        <!-- <button class="award-filter px-4 py-2 bg-purple-100 text-purple-800 rounded-full text-sm font-medium" data-category="other">Other</button> -->
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <!-- Award Cards -->
+        <div class="award-card bg-yellow-100 border border-yellow-200 rounded-xl shadow-md p-6"
+          data-category="leadership">
+          <h3 class="text-lg font-semibold text-yellow-900 mb-2">Emerging Leader of the Year</h3>
+          <p class="text-sm text-yellow-800">Recognized for outstanding leadership across healthcare innovation and
+            entrepreneurship.</p>
+        </div>
+        <div class="award-card bg-yellow-100 border border-yellow-200 rounded-xl shadow-md p-6"
+          data-category="leadership">
+          <h3 class="text-lg font-semibold text-yellow-900 mb-2">GaTech 40 Under 40 @ 30</h3>
+          <p class="text-sm text-yellow-800">Named among Georgia Tech's top alumni under 40 for leadership and impact.
+          </p>
+        </div>
+        <div class="award-card bg-yellow-100 border border-yellow-200 rounded-xl shadow-md p-6"
+          data-category="leadership">
+          <h3 class="text-lg font-semibold text-yellow-900 mb-2">ITO's Most Influential Leaders 2022</h3>
+          <p class="text-sm text-yellow-800">Recognized for significant contributions to healthcare leadership.</p>
+        </div>
+        <div class="award-card bg-yellow-100 border border-yellow-200 rounded-xl shadow-md p-6"
+          data-category="leadership">
+          <h3 class="text-lg font-semibold text-yellow-900 mb-2">Technology Innovators Magazine Top 50 Healthcare
+            Technology CEOs 2022</h3>
+          <p class="text-sm text-yellow-800">Selected for demonstrating visionary leadership in healthcare technology.
+          </p>
+        </div>
+        <div class="award-card bg-blue-100 border border-blue-200 rounded-xl shadow-md p-6" data-category="innovation">
+          <h3 class="text-lg font-semibold text-blue-900 mb-2">United Way Health Innovation Tech Challenge – Grand Prize
+          </h3>
+          <p class="text-sm text-blue-800">Won for pioneering a novel healthcare solution for underserved communities.
+          </p>
+        </div>
+        <div class="award-card bg-blue-100 border border-blue-200 rounded-xl shadow-md p-6" data-category="innovation">
+          <h3 class="text-lg font-semibold text-blue-900 mb-2">Finalist – United Way HITC Social Impact Grant</h3>
+          <p class="text-sm text-blue-800">Recognized for commitment to scalable social innovation in health.</p>
+        </div>
+        <div class="award-card bg-green-100 border border-green-200 rounded-xl shadow-md p-6" data-category="pitch">
+          <h3 class="text-lg font-semibold text-green-900 mb-2">2nd Runner Up – TiE-U Global Pitch Competition</h3>
+          <p class="text-sm text-green-800">Ranked among global finalists showcasing entrepreneurial innovation.</p>
+        </div>
+        <div class="award-card bg-green-100 border border-green-200 rounded-xl shadow-md p-6" data-category="pitch">
+          <h3 class="text-lg font-semibold text-green-900 mb-2">1st Place – TiE-U Atlanta Pitch Competition</h3>
+          <p class="text-sm text-green-800">Won for presenting a promising healthcare startup with social impact.</p>
+        </div>
+        <div class="award-card bg-green-100 border border-green-200 rounded-xl shadow-md p-6" data-category="pitch">
+          <h3 class="text-lg font-semibold text-green-900 mb-2">Top 5 – Create-X Demo Day</h3>
+          <p class="text-sm text-green-800">Selected as one of the top ventures during the Georgia Tech startup
+            showcase.</p>
+        </div>
+        <div class="award-card bg-red-100 border border-red-200 rounded-xl shadow-md p-6" data-category="academic">
+          <h3 class="text-lg font-semibold text-red-900 mb-2">Merit Based Fellowship in Scheller College of Business
+          </h3>
+          <p class="text-sm text-red-800">Fellowship for top performers to fully cover tuition differential.</p>
+        </div>
+        <div class="award-card bg-yellow-100 border border-yellow-200 rounded-xl shadow-md p-6"
+          data-category="leadership">
+          <h3 class="text-lg font-semibold text-yellow-900 mb-2">Apptentive's #1 App Changing Healthcare</h3>
+          <p class="text-sm text-yellow-800">Recognized for significant contributions to healthcare leadership.</p>
+        </div>
+        <div class="award-card bg-green-100 border border-green-200 rounded-xl shadow-md p-6" data-category="pitch">
+          <h3 class="text-lg font-semibold text-green-900 mb-2">Top 10 of 500+ – Atlanta Startup Battle</h3>
+          <p class="text-sm text-green-800">Chosen from hundreds of startups for innovation and market potential.</p>
+        </div>
+        <div class="award-card bg-green-100 border border-green-200 rounded-xl shadow-md p-6" data-category="pitch">
+          <h3 class="text-lg font-semibold text-green-900 mb-2">1st Place – Healthcare Dealmakers</h3>
+          <p class="text-sm text-green-800">Awarded for innovative health venture addressing critical gaps in care.</p>
+        </div>
+        <div class="award-card bg-green-100 border border-green-200 rounded-xl shadow-md p-6" data-category="pitch">
+          <h3 class="text-lg font-semibold text-green-900 mb-2">Top 10 of 60+ – Health:Further Pitch</h3>
+          <p class="text-sm text-green-800">Selected for demonstrating scalable innovation in healthcare delivery.</p>
+        </div>
+        <div class="award-card bg-green-100 border border-green-200 rounded-xl shadow-md p-6" data-category="pitch">
+          <h3 class="text-lg font-semibold text-green-900 mb-2">Top 3 – Accelerate South Pitch</h3>
+          <p class="text-sm text-green-800">Recognized as a top startup pitch finalist for Southern region
+            entrepreneurs.</p>
+        </div>
+        <div class="award-card bg-blue-100 border border-blue-200 rounded-xl shadow-md p-6" data-category="innovation">
+          <h3 class="text-lg font-semibold text-blue-900 mb-2">Innovation Stage Speaker – Georgia Bio Innovation
+            Showcase</h3>
+          <p class="text-sm text-blue-800">Selected to present on health technology innovation in Georgia.</p>
+        </div>
+
+        <div class="award-card bg-red-100 border border-red-200 rounded-xl shadow-md p-6" data-category="academic">
+          <h3 class="text-lg font-semibold text-red-900 mb-2">NIH T32 Cell and Tissue Digital Poster Award Winner</h3>
+          <p class="text-sm text-red-800">Awarded for research excellence and digital presentation quality.</p>
+        </div>
+        <div class="award-card bg-yellow-100 border border-yellow-200 rounded-xl shadow-md p-6"
+          data-category="leadership">
+          <h3 class="text-lg font-semibold text-yellow-900 mb-2">Chris Ruffin Excellence in Leadership Award</h3>
+          <p class="text-sm text-yellow-800">Honored for academic achievement and student leadership excellence.</p>
+        </div>
+        <div class="award-card bg-red-100 border border-red-200 rounded-xl shadow-md p-6" data-category="academic">
+          <h3 class="text-lg font-semibold text-red-900 mb-2">BioE Day Outstanding Rapid Fire</h3>
+          <p class="text-sm text-red-800">Recognized for compelling and impactful research communication.</p>
+        </div>
+        <div class="award-card bg-red-100 border border-red-200 rounded-xl shadow-md p-6" data-category="academic">
+          <h3 class="text-lg font-semibold text-red-900 mb-2">Exchange Program – KU Leuven</h3>
+          <p class="text-sm text-red-800">Completed business and biotech studies at KU Leuven and Flanders Business
+            School.</p>
+        </div>
+        <div class="award-card bg-red-100 border border-red-200 rounded-xl shadow-md p-6" data-category="academic">
+          <h3 class="text-lg font-semibold text-red-900 mb-2">NIH T32 Training Grant</h3>
+          <p class="text-sm text-red-800">Awarded for proposal advancing research in cell and tissue engineering.</p>
+        </div>
+        <div class="award-card bg-blue-100 border border-blue-200 rounded-xl shadow-md p-6" data-category="innovation">
+          <h3 class="text-lg font-semibold text-blue-900 mb-2">2nd Place – NAPEC Innovation Conference</h3>
+          <p class="text-sm text-blue-800">Developed non-invasive intracranial pressure assessment device.</p>
+        </div>
+        <div class="award-card bg-blue-100 border border-blue-200 rounded-xl shadow-md p-6" data-category="innovation">
+          <h3 class="text-lg font-semibold text-blue-900 mb-2">2nd Place – MGH-APF/CIMIT Primary Care Competition</h3>
+          <p class="text-sm text-blue-800">Created non-invasive hemoglobin monitor for clinical use.</p>
+        </div>
+        <div class="award-card bg-red-100 border border-red-200 rounded-xl shadow-md p-6" data-category="academic">
+          <h3 class="text-lg font-semibold text-red-900 mb-2">1st Place – Bioinstrumentation Design Competition</h3>
+          <p class="text-sm text-red-800">Developed bio-gaming prosthetics system for bilateral below-elbow amputees.
+          </p>
+        </div>
+        <div class="award-card bg-blue-100 border border-blue-200 rounded-xl shadow-md p-6" data-category="innovation">
+          <h3 class="text-lg font-semibold text-blue-900 mb-2">1st Place – Medical Device Initiative: Testing in India
+          </h3>
+          <p class="text-sm text-blue-800">Developed low-cost medical technology deployed in India.</p>
+        </div>
+        <div class="award-card bg-red-100 border border-red-200 rounded-xl shadow-md p-6" data-category="academic">
+          <h3 class="text-lg font-semibold text-red-900 mb-2">3rd Place – Engineering World Health Design Competition
+          </h3>
+          <p class="text-sm text-red-800">Created a low-cost oxygen analyzer for low-resource settings.</p>
+        </div>
+
+        <div class="award-card bg-yellow-100 border border-yellow-200 rounded-xl shadow-md p-6"
+          data-category="leadership">
+          <h3 class="text-lg font-semibold text-yellow-900 mb-2">Boy Scouts of America Eagle Scout & Order of the Arrow
+          </h3>
+          <p class="text-sm text-yellow-800">Achieved Scouting’s highest honor and selected into its national honor
+            society.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-indigo-700 text-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">Get In Touch</h2>
+  
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        
+        <!-- Contact Information -->
+        <div class="bg-indigo-700 text-white-800  p-6">
+          <h3 class="text-xl font-bold mb-4">Contact Information</h3>
+          <div class="space-y-4 text-lg">
+            <div class="flex items-start">
+              <div class="mr-4 mt-1 text-white"><i class="fas fa-envelope"></i></div>
+              <div>
+                <p class="font-medium">Email</p>
+                <p class="text-indigo-300">aenten1@gmail.com</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="mr-4 mt-1 text-white-500"><i class="fas fa-phone"></i></div>
+              <div>
+                <p class="font-medium">Phone</p>
+                <p class="text-indigo-300">954.806.3673</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="mr-4 mt-1 text-white-500"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <p class="font-medium">Location</p>
+                <p class="text-indigo-300">Seattle, WA</p>
+              </div>
+            </div>
+            <a href="https://www.calendly.com/aaronenten" target="_blank" rel="noopener noreferrer"
+               class="inline-block bg-indigo-600 hover:bg-indigo-500 text-white px-5 py-2 rounded-lg transition">
+              Book a Call
+            </a>
+          </div>
+  
+          <div class="mt-6">
+            <h3 class="text-xl font-bold mb-4">Connect With Me</h3>
+            <div class="flex space-x-3">
+              <a href="https://www.linkedin.com/in/aaronenten" class="w-10 h-10 bg-blue-600 hover:bg-blue-500 rounded-full flex items-center justify-center">
+                <i class="fab fa-linkedin-in text-white"></i>
+              </a>
+              <a href="https://orcid.org/0009-0004-1401-2501" class="w-10 h-10 bg-green-600 hover:bg-green-500 rounded-full flex items-center justify-center">
+                <i class="fab fa-orcid text-white"></i>
+              </a>
+              <a href="https://www.lens.org/lens/profile/645879592/scholar" class="w-10 h-10 bg-gray-800 hover:bg-gray-700 rounded-full flex items-center justify-center">
+                <img src="https://static.lens.org/lens/9.5.2/img/favicon-32x32.png" alt="Lens" class="w-5 h-5">
+              </a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Contact Form -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <form action="https://formspree.io/f/xbloordl" method="POST" onsubmit="alert('Thanks! I will be in touch soon.')">
+            <div class="mb-4">
+              <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
+              <input type="text" id="name" name="name"
+                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 text-gray-800" required>
+            </div>
+            <div class="mb-4">
+              <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+              <input type="email" id="email" name="_replyto"
+                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 text-gray-800" required>
+            </div>
+            <div class="mb-4">
+              <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+              <textarea id="message" name="message" rows="14"
+                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 text-gray-800" required></textarea>
+            </div>
+            <button type="submit"
+              class="w-full bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg transition">
+              Send Message
+            </button>
+          </form>
+        </div>
+  
+        <!-- Calendly Widget -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <div class="calendly-inline-widget" data-url="https://calendly.com/aaronenten/30min" style="min-width:320px;height:600px;"></div>
+          <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Footer -->
+<footer class="bg-gray-900 text-white py-12">
   <div class="container mx-auto px-6">
-    <h2 class="text-3xl font-bold text-center mb-12">Awards & Recognition</h2>
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <div class="mb-6 md:mb-0">
+        <div class="text-2xl font-bold text-indigo-400 mb-2">Aaron Enten</div>
+        <p class="text-gray-400">Innovation & Technology Leader</p>
+      </div>
 
-    <!-- Filter Buttons -->
-    <div class="flex flex-wrap justify-center gap-3 mb-10">
-      <button class="award-filter px-4 py-2 bg-purple-100 text-purple-800 rounded-full text-sm font-medium" data-category="all">All</button>
-      <button class="award-filter px-4 py-2 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium" data-category="leadership">Leadership</button>
-      <button class="award-filter px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-medium" data-category="pitch">Pitch</button>
-      <button class="award-filter px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium" data-category="innovation">Innovation</button>
-      <button class="award-filter px-4 py-2 bg-red-100 text-red-800 rounded-full text-sm font-medium" data-category="academic">Academic</button>
-      <!-- <button class="award-filter px-4 py-2 bg-purple-100 text-purple-800 rounded-full text-sm font-medium" data-category="other">Other</button> -->
+      <!-- Social Icons -->
+      <div class="flex space-x-6">
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/aaronenten" target="_blank" rel="noopener noreferrer"
+          class="text-blue-400 hover:text-white transition text-xl flex items-center justify-center">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+
+        <!-- ORCID -->
+        <a href="https://orcid.org/0009-0004-1401-2501" target="_blank" rel="noopener noreferrer"
+          class="text-green-400 hover:text-white transition text-xl flex items-center justify-center">
+          <i class="fab fa-orcid"></i>
+        </a>
+
+        <!-- Lens.org -->
+        <a href="https://www.lens.org/lens/profile/645879592/scholar" target="_blank" rel="noopener noreferrer"
+          class="transition flex items-center justify-center">
+          <img src="https://static.lens.org/lens/9.5.2/img/favicon-32x32.png"
+            alt="Lens Profile"
+            class="w-5 h-5 hover:grayscale transition duration-300">
+        </a>
+      </div>
     </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-      <!-- Award Cards -->
-      <div class="award-card bg-yellow-100 border border-yellow-200 rounded-xl shadow-md p-6" data-category="leadership">
-        <h3 class="text-lg font-semibold text-yellow-900 mb-2">Emerging Leader of the Year</h3>
-        <p class="text-sm text-yellow-800">Recognized for outstanding leadership across healthcare innovation and entrepreneurship.</p>
-      </div>
-      <div class="award-card bg-yellow-100 border border-yellow-200 rounded-xl shadow-md p-6" data-category="leadership">
-        <h3 class="text-lg font-semibold text-yellow-900 mb-2">GaTech 40 Under 40 @ 30</h3>
-        <p class="text-sm text-yellow-800">Named among Georgia Tech's top alumni under 40 for leadership and impact.</p>
-      </div>
-      <div class="award-card bg-yellow-100 border border-yellow-200 rounded-xl shadow-md p-6" data-category="leadership">
-        <h3 class="text-lg font-semibold text-yellow-900 mb-2">ITO's Most Influential Leaders 2022</h3>
-        <p class="text-sm text-yellow-800">Recognized for significant contributions to healthcare leadership.</p>
-      </div>
-      <div class="award-card bg-yellow-100 border border-yellow-200 rounded-xl shadow-md p-6" data-category="leadership">
-        <h3 class="text-lg font-semibold text-yellow-900 mb-2">Technology Innovators Magazine Top 50 Healthcare Technology CEOs 2022</h3>
-        <p class="text-sm text-yellow-800">Selected for demonstrating visionary leadership in healthcare technology.</p>
-      </div>
-      <div class="award-card bg-blue-100 border border-blue-200 rounded-xl shadow-md p-6" data-category="innovation">
-        <h3 class="text-lg font-semibold text-blue-900 mb-2">United Way Health Innovation Tech Challenge – Grand Prize</h3>
-        <p class="text-sm text-blue-800">Won for pioneering a novel healthcare solution for underserved communities.</p>
-      </div>
-      <div class="award-card bg-blue-100 border border-blue-200 rounded-xl shadow-md p-6" data-category="innovation">
-        <h3 class="text-lg font-semibold text-blue-900 mb-2">Finalist – United Way HITC Social Impact Grant</h3>
-        <p class="text-sm text-blue-800">Recognized for commitment to scalable social innovation in health.</p>
-      </div>
-      <div class="award-card bg-green-100 border border-green-200 rounded-xl shadow-md p-6" data-category="pitch">
-        <h3 class="text-lg font-semibold text-green-900 mb-2">2nd Runner Up – TiE-U Global Pitch Competition</h3>
-        <p class="text-sm text-green-800">Ranked among global finalists showcasing entrepreneurial innovation.</p>
-      </div>
-      <div class="award-card bg-green-100 border border-green-200 rounded-xl shadow-md p-6" data-category="pitch">
-        <h3 class="text-lg font-semibold text-green-900 mb-2">1st Place – TiE-U Atlanta Pitch Competition</h3>
-        <p class="text-sm text-green-800">Won for presenting a promising healthcare startup with social impact.</p>
-      </div>
-      <div class="award-card bg-green-100 border border-green-200 rounded-xl shadow-md p-6" data-category="pitch">
-        <h3 class="text-lg font-semibold text-green-900 mb-2">Top 5 – Create-X Demo Day</h3>
-        <p class="text-sm text-green-800">Selected as one of the top ventures during the Georgia Tech startup showcase.</p>
-      </div>
-      <div class="award-card bg-red-100 border border-red-200 rounded-xl shadow-md p-6" data-category="academic">
-        <h3 class="text-lg font-semibold text-red-900 mb-2">Merit Based Fellowship in Scheller College of Business</h3>
-        <p class="text-sm text-red-800">Fellowship for top performers to fully cover tuition differential.</p>
-      </div>
-      <div class="award-card bg-yellow-100 border border-yellow-200 rounded-xl shadow-md p-6" data-category="leadership">
-        <h3 class="text-lg font-semibold text-yellow-900 mb-2">Apptentive's #1 App Changing Healthcare</h3>
-        <p class="text-sm text-yellow-800">Recognized for significant contributions to healthcare leadership.</p>
-      </div>
-      <div class="award-card bg-green-100 border border-green-200 rounded-xl shadow-md p-6" data-category="pitch">
-        <h3 class="text-lg font-semibold text-green-900 mb-2">Top 10 of 500+ – Atlanta Startup Battle</h3>
-        <p class="text-sm text-green-800">Chosen from hundreds of startups for innovation and market potential.</p>
-      </div>
-      <div class="award-card bg-green-100 border border-green-200 rounded-xl shadow-md p-6" data-category="pitch">
-        <h3 class="text-lg font-semibold text-green-900 mb-2">1st Place – Healthcare Dealmakers</h3>
-        <p class="text-sm text-green-800">Awarded for innovative health venture addressing critical gaps in care.</p>
-      </div>
-      <div class="award-card bg-green-100 border border-green-200 rounded-xl shadow-md p-6" data-category="pitch">
-        <h3 class="text-lg font-semibold text-green-900 mb-2">Top 10 of 60+ – Health:Further Pitch</h3>
-        <p class="text-sm text-green-800">Selected for demonstrating scalable innovation in healthcare delivery.</p>
-      </div>
-      <div class="award-card bg-green-100 border border-green-200 rounded-xl shadow-md p-6" data-category="pitch">
-        <h3 class="text-lg font-semibold text-green-900 mb-2">Top 3 – Accelerate South Pitch</h3>
-        <p class="text-sm text-green-800">Recognized as a top startup pitch finalist for Southern region entrepreneurs.</p>
-      </div>      
-      <div class="award-card bg-blue-100 border border-blue-200 rounded-xl shadow-md p-6" data-category="innovation">
-        <h3 class="text-lg font-semibold text-blue-900 mb-2">Innovation Stage Speaker – Georgia Bio Innovation Showcase</h3>
-        <p class="text-sm text-blue-800">Selected to present on health technology innovation in Georgia.</p>
-      </div>
-
-      <div class="award-card bg-red-100 border border-red-200 rounded-xl shadow-md p-6" data-category="academic">
-        <h3 class="text-lg font-semibold text-red-900 mb-2">NIH T32 Cell and Tissue Digital Poster Award Winner</h3>
-        <p class="text-sm text-red-800">Awarded for research excellence and digital presentation quality.</p>
-      </div>
-      <div class="award-card bg-yellow-100 border border-yellow-200 rounded-xl shadow-md p-6" data-category="leadership">
-        <h3 class="text-lg font-semibold text-yellow-900 mb-2">Chris Ruffin Excellence in Leadership Award</h3>
-        <p class="text-sm text-yellow-800">Honored for academic achievement and student leadership excellence.</p>
-      </div>
-      <div class="award-card bg-red-100 border border-red-200 rounded-xl shadow-md p-6" data-category="academic">
-        <h3 class="text-lg font-semibold text-red-900 mb-2">BioE Day Outstanding Rapid Fire</h3>
-        <p class="text-sm text-red-800">Recognized for compelling and impactful research communication.</p>
-      </div>
-      <div class="award-card bg-red-100 border border-red-200 rounded-xl shadow-md p-6" data-category="academic">
-        <h3 class="text-lg font-semibold text-red-900 mb-2">Exchange Program – KU Leuven</h3>
-        <p class="text-sm text-red-800">Completed business and biotech studies at KU Leuven and Flanders Business School.</p>
-      </div>
-      <div class="award-card bg-red-100 border border-red-200 rounded-xl shadow-md p-6" data-category="academic">
-        <h3 class="text-lg font-semibold text-red-900 mb-2">NIH T32 Training Grant</h3>
-        <p class="text-sm text-red-800">Awarded for proposal advancing research in cell and tissue engineering.</p>
-      </div>
-      <div class="award-card bg-blue-100 border border-blue-200 rounded-xl shadow-md p-6" data-category="innovation">
-        <h3 class="text-lg font-semibold text-blue-900 mb-2">2nd Place – NAPEC Innovation Conference</h3>
-        <p class="text-sm text-blue-800">Developed non-invasive intracranial pressure assessment device.</p>
-      </div>
-      <div class="award-card bg-blue-100 border border-blue-200 rounded-xl shadow-md p-6" data-category="innovation">
-        <h3 class="text-lg font-semibold text-blue-900 mb-2">2nd Place – MGH-APF/CIMIT Primary Care Competition</h3>
-        <p class="text-sm text-blue-800">Created non-invasive hemoglobin monitor for clinical use.</p>
-      </div>
-      <div class="award-card bg-red-100 border border-red-200 rounded-xl shadow-md p-6" data-category="academic">
-        <h3 class="text-lg font-semibold text-red-900 mb-2">1st Place – Bioinstrumentation Design Competition</h3>
-        <p class="text-sm text-red-800">Developed bio-gaming prosthetics system for bilateral below-elbow amputees.</p>
-      </div>
-      <div class="award-card bg-blue-100 border border-blue-200 rounded-xl shadow-md p-6" data-category="innovation">
-        <h3 class="text-lg font-semibold text-blue-900 mb-2">1st Place – Medical Device Initiative: Testing in India</h3>
-        <p class="text-sm text-blue-800">Developed low-cost medical technology deployed in India.</p>
-      </div>
-      <div class="award-card bg-red-100 border border-red-200 rounded-xl shadow-md p-6" data-category="academic">
-        <h3 class="text-lg font-semibold text-red-900 mb-2">3rd Place – Engineering World Health Design Competition</h3>
-        <p class="text-sm text-red-800">Created a low-cost oxygen analyzer for low-resource settings.</p>
-      </div>
-
-      <div class="award-card bg-yellow-100 border border-yellow-200 rounded-xl shadow-md p-6" data-category="leadership">
-        <h3 class="text-lg font-semibold text-yellow-900 mb-2">Boy Scouts of America Eagle Scout & Order of the Arrow</h3>
-        <p class="text-sm text-yellow-800">Achieved Scouting’s highest honor and selected into its national honor society.</p>
-      </div>
+    <!-- Footer bottom -->
+    <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+      <p>&copy; 2025 Aaron Enten. All rights reserved.</p>
     </div>
   </div>
-</section>
+</footer>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-indigo-700 text-white">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-12">Get In Touch</h2>
-            
-            <div class="max-w-4xl mx-auto">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div>
-                        <h3 class="text-xl font-bold mb-4">Contact Information</h3>
-                        <div class="space-y-4">
-                            <div class="flex items-start">
-                                <div class="mr-4 mt-1 text-indigo-300">
-                                    <i class="fas fa-envelope"></i>
-                                </div>
-                                <div>
-                                    <p class="font-medium">Email</p>
-                                    <p class="text-indigo-200">aenten1@gmail.com</p>
-                                </div>
-                            </div>
-                            <div class="flex items-start">
-                                <div class="mr-4 mt-1 text-indigo-300">
-                                    <i class="fas fa-phone"></i>
-                                </div>
-                                <div>
-                                    <p class="font-medium">Phone</p>
-                                    <p class="text-indigo-200">954.806.3673</p>
-                                </div>
-                            </div>
-                            <div class="flex items-start">
-                                <div class="mr-4 mt-1 text-indigo-300">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                </div>
-                                <div>
-                                    <p class="font-medium">Location</p>
-                                    <p class="text-indigo-200">Seattle, WA</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="mt-8">
-                            <h3 class="text-xl font-bold mb-4">Connect With Me</h3>
-                            <div class="flex space-x-4">
-                                <a href="https://www.linkedin.com/in/aaronenten" class="w-10 h-10 rounded-full bg-blue-600 hover:bg-blue-500 flex items-center justify-center transition">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a>
-                                <a href="https://orcid.org/0009-0004-1401-2501" class="w-10 h-10 rounded-full bg-green-600 hover:bg-green-500 flex items-center justify-center transition">
-                                    <i class="fab fa-orcid"></i>
-                                </a>
-                                <a href="https://www.lens.org/lens/profile/645879592/scholar" class="w-10 h-10 rounded-full bg-gray-900 hover:bg-gray-800 flex items-center justify-center transition">
-                                    <i class="fab"></i><img src="https://static.lens.org/lens/9.5.2/img/favicon-32x32.png" alt="Lens Profile" ></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div>
-                        <form class="bg-white p-6 rounded-lg shadow-md">
-                            <div class="mb-4">
-                                <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
-                                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
-                            </div>
-                            <div class="mb-4">
-                                <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
-                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
-                            </div>
-                            <div class="mb-4">
-                                <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
-                                <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
-                            </div>
-                            <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg transition">Send Message</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+  <script>
+    const selectedSkills = new Set();
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-6 md:mb-0">
-                    <div class="text-2xl font-bold text-indigo-400 mb-2">Aaron Enten</div>
-                    <p class="text-gray-400">Innovation & Technology Leader</p>
-                </div>
-                <div class="flex space-x-6">
-                    <a href="https://www.linkedin.com/in/aaronenten" class="text-blue-400 hover:text-white transition">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="https://orcid.org/0009-0004-1401-2501" class="text-green-400 hover:text-white transition">
-                        <i class="fab fa-orcid"></i>
-                    </a>
-                    <a href="https://www.lens.org/lens/profile/645879592/scholar" class="text-gray-700 w-4 h-4 hover:text-white transition">
-                        <img src="https://static.lens.org/lens/9.5.2/img/favicon-32x32.png" alt="Lens Profile" class="fab">
-                    </a>
-                </div>
-            </div>
-            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; 2025 Aaron Enten. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
-    <script>
-      const selectedSkills = new Set();
-    
-      document.querySelectorAll('.skill-pill').forEach(skill => {
-        skill.addEventListener('click', function () {
-          const selectedSkill = this.textContent.trim().toLowerCase();
-    
-          // Toggle skill selection
-          if (selectedSkills.has(selectedSkill)) {
-            selectedSkills.delete(selectedSkill);
-            this.classList.remove('ring', 'ring-offset-2', 'ring-indigo-400');
-          } else {
-            selectedSkills.add(selectedSkill);
-            this.classList.add('ring', 'ring-offset-2', 'ring-indigo-400');
-          }
-    
-          // Highlight matching project cards
-          document.querySelectorAll('.project-card').forEach(card => {
-            const tags = Array.from(card.querySelectorAll('span')).map(tag => tag.textContent.trim().toLowerCase());
-            const matches = Array.from(selectedSkills).some(skill => tags.includes(skill));
-    
-            if (matches) {
-              card.classList.add('border-4', 'border-indigo-500');
-            } else {
-              card.classList.remove('border-4', 'border-indigo-500');
-            }
-          });
-        });
-      });
-    </script>
-    <script>
-      document.querySelectorAll('.award-filter').forEach(button => {
-        button.addEventListener('click', function () {
-          const category = this.getAttribute('data-category');
-    
-          document.querySelectorAll('.award-card').forEach(card => {
-            if (category === 'all' || card.getAttribute('data-category') === category) {
-              card.style.display = 'block';
-            } else {
-              card.style.display = 'none';
-            }
-          });
-    
-          document.querySelectorAll('.award-filter').forEach(btn => btn.classList.remove('ring', 'ring-offset-2', 'ring-indigo-400'));
+    document.querySelectorAll('.skill-pill').forEach(skill => {
+      skill.addEventListener('click', function () {
+        const selectedSkill = this.textContent.trim().toLowerCase();
+
+        // Toggle skill selection
+        if (selectedSkills.has(selectedSkill)) {
+          selectedSkills.delete(selectedSkill);
+          this.classList.remove('ring', 'ring-offset-2', 'ring-indigo-400');
+        } else {
+          selectedSkills.add(selectedSkill);
           this.classList.add('ring', 'ring-offset-2', 'ring-indigo-400');
+        }
+
+        // Highlight matching project cards
+        document.querySelectorAll('.project-card').forEach(card => {
+          const tags = Array.from(card.querySelectorAll('span')).map(tag => tag.textContent.trim().toLowerCase());
+          const matches = Array.from(selectedSkills).some(skill => tags.includes(skill));
+
+          if (matches) {
+            card.classList.add('border-4', 'border-indigo-500');
+          } else {
+            card.classList.remove('border-4', 'border-indigo-500');
+          }
         });
       });
-    </script>
-    <script>
-//        const header = document.getElementById("pageHeader");
+    });
+  </script>
+  <script>
+    document.querySelectorAll('.award-filter').forEach(button => {
+      button.addEventListener('click', function () {
+        const category = this.getAttribute('data-category');
 
-//        window.addEventListener("scroll", () => {
- //         if (window.scrollY > 50) {
- //           header.classList.remove("-translate-y-full");
-//          } else {
-//            header.classList.add("-translate-y-full");
-//          }
-//        });
-        
-
-
-        // Simple mobile menu toggle
-        document.querySelector('button').addEventListener('click', function() {
-            const nav = document.querySelector('nav');
-            nav.classList.toggle('hidden');
-            nav.classList.toggle('flex');
-            nav.classList.toggle('flex-col');
-            nav.classList.toggle('absolute');
-            nav.classList.toggle('top-16');
-            nav.classList.toggle('right-6');
-            nav.classList.toggle('bg-white');
-            nav.classList.toggle('p-4');
-            nav.classList.toggle('rounded-lg');
-            nav.classList.toggle('shadow-lg');
-            nav.classList.toggle('space-y-4');
-            nav.classList.toggle('space-x-0');
+        document.querySelectorAll('.award-card').forEach(card => {
+          if (category === 'all' || card.getAttribute('data-category') === category) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
         });
 
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
+        document.querySelectorAll('.award-filter').forEach(btn => btn.classList.remove('ring', 'ring-offset-2', 'ring-indigo-400'));
+        this.classList.add('ring', 'ring-offset-2', 'ring-indigo-400');
+      });
+    });
+  </script>
+  <script>
+    //        const header = document.getElementById("pageHeader");
+
+    //        window.addEventListener("scroll", () => {
+    //         if (window.scrollY > 50) {
+    //           header.classList.remove("-translate-y-full");
+    //          } else {
+    //            header.classList.add("-translate-y-full");
+    //          }
+    //        });
+
+
+
+    // Simple mobile menu toggle
+    document.querySelector('button').addEventListener('click', function () {
+      const nav = document.querySelector('nav');
+      nav.classList.toggle('hidden');
+      nav.classList.toggle('flex');
+      nav.classList.toggle('flex-col');
+      nav.classList.toggle('absolute');
+      nav.classList.toggle('top-16');
+      nav.classList.toggle('right-6');
+      nav.classList.toggle('bg-white');
+      nav.classList.toggle('p-4');
+      nav.classList.toggle('rounded-lg');
+      nav.classList.toggle('shadow-lg');
+      nav.classList.toggle('space-y-4');
+      nav.classList.toggle('space-x-0');
+    });
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
         });
-    </script>
+      });
+    });
+  </script>
 </body>
+
 </html>
